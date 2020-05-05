@@ -10,8 +10,8 @@ header {
     background-image: url("../img/background-top.png");
     background-size: cover;
     width: 100%;
-
 }
+
 #banner {
     width: 855px;
     margin: 0 auto;
@@ -108,9 +108,29 @@ header {
 #middle-middle1{
     padding-top: 50px;
 }
-.mp-img{
+
+.mp-img1{
     align-items: center;
     background-image: url("../img/mp-background.PNG");
+}
+
+#middle-middle2{
+    padding-top: 50px;
+
+}
+
+.mp-img2{
+    align-items: center;
+    background-image: url("../img/mp-background2.PNG");
+}
+
+#middle-middle3{
+    padding-top: 50px;
+}
+
+.mp-img3{
+    align-items: center;
+    background-image: url("../img/mp-background3.PNG");
 }
 
 #mp-side{
@@ -123,6 +143,30 @@ header {
     font-size: 20px;
     font-weight: 600;
     color: #ec9413;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+}
 
+#accordion-button{    
+    background-color: #f6bc06;
+    border-radius: 20px;
+    border: transparent;
+    font-family: 'Overpass', sans-serif;
+    height: 40px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+    padding-top: 6px;
+    padding-left: 40px;
+    margin-top: 5px;
+}
+
+.card-body {
+    margin-top: -20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: transparent;
+    background-color: #f7dfd8;
+    color: #d85532;
 }
