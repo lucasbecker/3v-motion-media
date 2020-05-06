@@ -2,24 +2,22 @@
 
 body {
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    width: 100vw;       
+    height: 100vh;
 }
 
 header {
     background-image: url("../img/background-top.png");
     background-size: cover;
-    width: 100%;
 }
 
 #banner {
-    width: 855px;
     margin: 0 auto;
-
 }
 
 #banner-txt {
     padding-top: 180px;
+
 }
 
 #banner-img {
@@ -36,29 +34,25 @@ header {
     font-size: 20px;
     font-weight: 900;
     color: #a8391c;
-    
 }
 
 #balloons {
     padding-top: 50px;
     margin: 0 auto;
-    width: 855px;
-    
 }
 
 #balloon {
     background-color: #f6bc06;
     border-radius: 20px;
-    width: 270px;
     margin: 10px;
     padding: 20px;
 }
 
 #balloon:hover {
     border-color: transparent;
-    box-shadow: 0 10px 30px black;
-    margin-top: -5px;
-    margin-bottom: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+    margin-top: -2px;
+    margin-bottom: 2px;
 }
 
 .img-balloon {
@@ -72,6 +66,7 @@ header {
     font-weight: 900;
     color: white;
 }
+
 .p-balloon{
     padding-top: 10px;
     font-family: 'Overpass', sans-serif;
@@ -80,17 +75,10 @@ header {
     color: white;
 }
 
-#middle {
-    width: 855px;
-    margin: 0 auto;
-    padding-top: 35px;
-
-}
-
 #middle-text {
+    padding-top: 35px;
     font-family: 'Overpass', sans-serif;
     text-align: center;
-
 }
 
 #middle-title {
@@ -103,38 +91,27 @@ header {
     font-size: 26px;
     font-weight: 300;
     color: #ec9413;
-}
-
-#middle-middle1{
-    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .mp-img1{
-    align-items: center;
+    margin-top: 25px;
     background-image: url("../img/mp-background.PNG");
 }
 
-#middle-middle2{
-    padding-top: 50px;
-
-}
-
 .mp-img2{
-    align-items: center;
+    margin-top: 25px;
     background-image: url("../img/mp-background2.PNG");
-}
-
-#middle-middle3{
-    padding-top: 50px;
+    background-position: center;
 }
 
 .mp-img3{
-    align-items: center;
+    margin-top: 25px;
     background-image: url("../img/mp-background3.PNG");
 }
 
-#mp-side{
-    padding-left: 130px;
+.mp-side-txt {
+    margin-top: 25px;
 }
 
 .mp-side-subtxt {
@@ -169,4 +146,11 @@ header {
     border: transparent;
     background-color: #f7dfd8;
     color: #d85532;
+}
+
+#middle-middle2{
+    margin-top: 25px;
+    background-image: url("../img/background-middle1.PNG");
+    background-size: cover;
+    padding-bottom: 25px;
 }
