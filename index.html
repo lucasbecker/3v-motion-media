@@ -89,8 +89,9 @@
         <!-- Cardapio Animado, Cardapio Interativo e Chamada Animada -->
         <div class="row justify-content-center" data-aos="fade-up" id="middle-middle1">
             <!-- Celular Exemplo -->
-            <div class="col-md-4" id="mp">
-                <img class="mp-img1" src="./img/mp-img1.PNG"/>
+            <div class="col-md-4 mp-img1" id="mp">
+                <img  src="./img/mp-img1.PNG"/>
+                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
             </div>
             <!-- Conteudo lateral -->
             <div class="col-md-4" id="mp-side">
@@ -170,14 +171,16 @@
                   </div>
             </div>
             <!-- Celular Exemplo -->
-            <div class="col-md-4" id="mp">
-                <img class="mp-img2" src="./img/mp-img2.PNG"/>
+            <div class="col-md-4 mp-img2" id="mp">
+                <img src="./img/mp-img2.PNG"/>
+                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
             </div>
         </div>
         <div class="row justify-content-center" data-aos="fade-up" id="middle-middle3">
             <!-- Celular Exemplo -->
-            <div class="col-md-4" id="mp">
-                <img class="mp-img3" src="./img/mp-img3.PNG"/>
+            <div class="col-md-4 mp-img3" id="mp">
+                <img src="./img/mp-img3.PNG"/>
+                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
             </div>
             <!-- Conteudo Lateral -->
             <div class="col-md-4" id="mp-side">
@@ -214,7 +217,7 @@
                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe aut corporis itaque magni iusto consectetur placeat neque illo? Reiciendis inventore soluta porro rerum qui nemo praesentium suscipit, eius dolores aspernatur?
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
         <!-- Mais Vantagens e Preços -->
@@ -237,8 +240,18 @@
                 </div>
                 <p class="p-mb">Tenha uma promoção animada para atrair novos clientes além de fidelizar sua audiencia já existente.</p>
             </div>
-            <div class="col-md-4">
+            <!--<div class="col-md-4">
                 <img src="./img/middle-bottom-img.PNG" id="mb-img"/>
+            </div>-->
+            <div class="col-md-4" id="banner-img">
+                <ul id="scene2">
+                    <li class="layer" data-depth="0.3"> 
+                        <img src="./img/middle-bottom-img-background.PNG"/>
+                    </li>
+                    <li class="layer" data-depth="0.9" id="lp"> 
+                        <img src="./img/middle-bottom-img.PNG"/>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="row justify-content-center" data-aos="fade-up" id="middle-bottom2">
@@ -299,6 +312,81 @@
             </div>
             <div class="col-md-2"></div>
         </div>
+
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-md-8" id="promo-text">
+                    <h1 id="title">A promoção acaba em:</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center " id="balloons-promo">
+                <div class="col-md-2"></div> 
+                <div class="col-md" id="balloon-promo">
+                    <p class="h-bp">00</p>
+                    <p class="p-bp"> DIAS</p>
+                </div>
+                <div class="col-md" id="balloon-promo">
+                    <p class="h-bp">22</p>
+                    <p class="p-bp"> HORAS</p>
+                </div>
+                <div class="col-md" id="balloon-promo">
+                    <p class="h-bp">59</p>
+                    <p class="p-bp"> MINUTOS</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col-md-2"></div>
+                <div class="col-md" id="barra-regressiva">85% do limite máximo de pacotes vendidos</div>
+                <div class="col-md-2"></div>
+            </div>
+        </section>
+        <section id="faq">
+            <div class="row justify-content-center">
+                <div class="col-md-8" id="promo-text">
+                    <h1 id="title">Perguntas Frequentes</h1>
+                    <h2 id="subtitle">Ainda tem dúvidas? Busque-a no nosso FAQ</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="accordion col-md-8" id="accordion-faq">
+                    <!-- Parte 1 -->
+                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                        <p>Alguma pergunta aqui, pode ser uma pergunta curta ou mais longa assim</p>
+                    </button>
+                    <div id="collapse14" class="collapse" data-parent="#accordion-faq">
+                        <div class="card-body">
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui. Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui. Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                        </div>
+                    </div>
+                    <!-- Parte 2 -->
+                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                        Alguma pergunta mais longa
+                    </button>
+                    <div id="collapse24" class="collapse" data-parent="#accordion-faq">
+                        <div class="card-body">
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui. Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui. Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                        </div>
+                    </div>
+                    <!-- Parte 3 -->
+                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse34" aria-expanded="false" aria-controls="collapse34">
+                        Alguma pergunta curta
+                    </button>
+                    <div id="collapse34" class="collapse" data-parent="#accordion-faq">
+                        <div class="card-body">
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui. Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui. Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                            Resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui, resposta aqui.
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
     </main>
     <footer class="container-fluid justify-content-center" id="bottom">
         <!-- Entre em Contato-->

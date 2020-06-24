@@ -2,6 +2,10 @@
 
 html, body{
     overflow-x: hidden; 
+    height: auto; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -9,6 +13,7 @@ header {
     background-size: cover;
     font-family: 'Overpass', sans-serif;
     text-align: center;
+    height: 100%;
 }
 
 #banner-txt {
@@ -98,24 +103,33 @@ main {
 .mp-img1{
     margin-top: 25px;
     background-image: url("../img/mp-background.PNG");
-    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .mp-img2{
     margin-top: 25px;
     background-image: url("../img/mp-background2.PNG");
-    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .mp-img3{
     margin-top: 25px;
     background-image: url("../img/mp-background3.PNG");
-    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #mp-side{
     text-align: left;
     margin-top: 25px;
+}
+
+.legenda-mp{
+    margin-top: 30px;
+    font-size: 16px;
+    color: #ec9413;
 }
 
 .mp-side-subtxt {
@@ -170,6 +184,7 @@ main {
     background-image: url("../img/background-middle-bottom1.PNG");
     background-size: cover;
     padding-bottom: 70px;
+    height: auto;
 }
 
 #mb-txt{
@@ -290,6 +305,63 @@ main {
 
 .span-li{
     font-weight: 200;
+}
+
+
+#promo-text{
+    margin-top: 50px;
+}
+
+#balloon-promo{
+    background-color: #f6bc06;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.h-bp{
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: -40px;
+}
+
+.p-bp{
+    color: #d85532;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: -40px;
+}
+
+#barra-regressiva{
+    background-color: #f6bc06;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+#faq{
+    
+}
+
+#accordion-button-faq{
+    background-color: #f6bc06;
+    border-radius: 25px;
+    border: transparent;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 25px;
+    margin-top: 5px;
 }
 
 footer{
