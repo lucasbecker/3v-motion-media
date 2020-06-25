@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap');
 
-html, body{
+html, body{ 
     overflow-x: hidden; 
-    height: auto; 
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
+    font-family: 'Overpass', sans-serif;
+    width: 100vw;
 }
 
-header {
+/* HEADER */
+header{
     background-image: url("../img/background-top.png");
     background-size: cover;
-    font-family: 'Overpass', sans-serif;
-    text-align: center;
-    height: 100%;
+    background-position: bottom;
+    height: auto;
+    background-repeat: no-repeat;
 }
 
-#banner-txt {
-    padding-top: 180px;
-    text-align: left;
-}
-
-#banner-img {
+/* SEÇÃO BANNER */
+#banner{
     padding-top: 50px;
 }
 
-#lp{
-    padding-left: 35px;
+#banner-left{
+    margin-top: 120px;
 }
 
-#banner-button {
+#banner-button{
     margin-top: 30px;
     padding-top: 10px;
     padding-right: 30px;
@@ -38,16 +38,20 @@ header {
     font-size: 20px;
     font-weight: 900;
     color: #a8391c;
-    text-align: left;
 }
 
+.parallax-padding{
+    padding-left: 35px;
+}
+
+/* SEÇÃO BALÕES */
 #balloons {
     padding-top: 50px;
 }
 
 #balloon {
     background-color: #f6bc06;
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 10px;
     padding: 20px;
     text-align: left;
@@ -60,24 +64,22 @@ header {
     margin-bottom: 2px;
 }
 
-.img-balloon {
-    padding: 0px 0px 10px 10px;
-    margin-left: 5px;
+.balloon-icon {
     margin-right: 10px;
-
 }
 
-.h-balloon{
-    padding-top: 2px;
-    font-size: 20px;
+.balloon-h{
+    margin-top: 5px;
+    line-height: 1.2em;
+    font-size: 1.3em;
     font-weight: 900;
     color: white;
 }
 
-.p-balloon{ 
-    margin-top: 2px;
+.balloon-p{ 
+    line-height: 1.3em;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 0.92em;
     color: white;
 }
 
@@ -85,15 +87,19 @@ main {
     padding-top: 35px;
     font-family: 'Overpass', sans-serif;
     text-align: center;
+    min-height: 100%;
+
 }
 
 #title {
+    text-align: center;
     font-size: 42px;
     font-weight: 900;
     color: #d85532;
 }
 
 #subtitle {
+    text-align: center;
     font-size: 26px;
     font-weight: 300;
     color: #ec9413;
@@ -104,6 +110,7 @@ main {
     margin-top: 25px;
     background-image: url("../img/mp-background.PNG");
     background-position: top;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -111,6 +118,7 @@ main {
     margin-top: 25px;
     background-image: url("../img/mp-background2.PNG");
     background-position: top;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -118,6 +126,7 @@ main {
     margin-top: 25px;
     background-image: url("../img/mp-background3.PNG");
     background-position: top;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -158,49 +167,45 @@ main {
 
 .card-body {
     padding-top: 10px;
-    /*border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;*/
     border-radius: 20px;
     border: transparent;
-    background-color: #f7dfd8;
+    background-color: #F7DDD6;
     color: #d85532;
 }
 
 #card-body-middle{
-    background-color: #fcf0ea;
+    background-color: #FDF6F2;
 }
 
-#middle-middle2{
+#cardapio-interativo{
     margin-top: 25px;
-    background-image: url("../img/background-middle1.PNG");
-    background-size: cover;
+    background-color: #F7DDD6;
     padding-bottom: 25px;
+    padding-top: 25px;
 }
-/*------------------------------------------*/
-#middle-bottom1{ 
 
+#chamada-animada{
+    margin-top: 25px;
+}
+
+#mais-vantanges{ 
     margin-top: 25px;
     padding-top: 60px;
     background-image: url("../img/background-middle-bottom1.PNG");
     background-size: cover;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     height: auto;
 }
 
 #mb-txt{
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 #mb-title{
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
-#mb-img {
-    background-image: url("../img/middle-bottom-img-background.PNG");
-    background-position: center;
-    margin-top: 100px;
-}
 
 .h-mb{
     font-size: 24px;
@@ -209,7 +214,7 @@ main {
 }
 
 .p-mb{
-    margin-left: 25px;
+    margin-left: 40px;
     margin-top: -10px;
     font-weight: 200;
     font-size: 18px;
@@ -217,50 +222,37 @@ main {
 }
 
 .check {
-    width: 25px;
-    height: 25px;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.check-g{
-    list-style-image: url("../img/check-green.PNG");
-    font-weight: 900;
-    font-size: 18px;
-    color: white;
-
-  }
-
-.check-r{
-    list-style-image: url("../img/check-red.PNG");
-    font-weight: 900;
-    font-size: 18px;
-    color: white;
+#pizza{
+    padding-top: 50px;
 }
 
 #price {
     background-color: #f6bc06;
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 10px;
     padding: 20px;
     text-align: left;
+    height: 100%;
+    margin-bottom: 50px;
 }
 
 #price-special {
     background-color: #f6bc06;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 20px;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: left;
-    background-image: url("../img/price-special-img.png");
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
 }
 
 #price-button{
+    padding-top: 10px;
     margin-top: 25px;
     border-radius: 30px;
     font-size: 20px;
@@ -270,6 +262,7 @@ main {
 }
 
 #price-special-button{
+    padding-top: 10px;
     margin-top: 25px;
     border-radius: 30px;
     font-size: 20px;
@@ -279,15 +272,15 @@ main {
     border: transparent;
 }
 
-.price-img {
-    margin: 15px;
+.img-price{
+    margin-right: 10px;
 }
 
 .h-price{
     font-size: 24px;
     font-weight: 900;
     color: white;
-    margin-top: 30px;
+    padding-top: 15px;
 }
 
 .p-price{
@@ -295,6 +288,7 @@ main {
     font-weight: 600;
     font-size: 20px;
     color: white;
+    text-align: center;
 }
 
 .span-price{
@@ -303,14 +297,24 @@ main {
     font-weight: 900;
 }
 
-.span-li{
+.span-item{
     font-weight: 200;
 }
 
-
-#promo-text{
-    margin-top: 50px;
+.span-preco{
+    text-decoration: line-through;
+    text-decoration-color: #a8391c;
 }
+
+.item{
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    padding-top: 2px;
+}
+
+/* SEÇÃO URGENCIA */
+
 
 #balloon-promo{
     background-color: #f6bc06;
@@ -346,8 +350,13 @@ main {
     text-align: center;
 }
 
-#faq{
-    
+/* FAQ */
+
+.faq{
+    margin-top: 25px;
+    padding-top: 25px;
+    background-color: #F7DDD6;
+    padding-bottom: 50px;
 }
 
 #accordion-button-faq{
@@ -364,12 +373,21 @@ main {
     margin-top: 5px;
 }
 
+.card-body-faq {
+    padding: 20px;
+    border-radius: 20px;
+    border: transparent;
+    background-color: #FDF6F2;
+    color: #d85532;
+    text-align: justify;
+}
+
 footer{
     background-image: url("../img/background-bottom.PNG");
+    background-color: #F7DDD6;
     background-size: cover;
     font-family: 'Overpass', sans-serif;
     text-align: center;
-    margin-top: 80px;
 }
 
 #title-bottom{
