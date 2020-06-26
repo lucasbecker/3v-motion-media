@@ -41,6 +41,10 @@ header{
     color: #a8391c;
 }
 
+#banner-button a{
+    text-decoration: none;
+}
+
 .parallax-padding{
     padding-left: 35px;
 }
