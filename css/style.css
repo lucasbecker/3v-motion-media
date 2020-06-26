@@ -18,6 +18,7 @@ header{
     background-position: bottom;
     height: auto;
     background-repeat: no-repeat;
+    padding-bottom: 50px;
 }
 
 /* SEÇÃO BANNER */
@@ -91,14 +92,14 @@ main {
 
 }
 
-#title {
+.title {
     text-align: center;
     font-size: 42px;
     font-weight: 900;
     color: #d85532;
 }
 
-#subtitle {
+.subtitle {
     text-align: center;
     font-size: 26px;
     font-weight: 300;
@@ -110,24 +111,24 @@ main {
     margin-top: 25px;
     background-image: url("../img/mp-background.PNG");
     background-position: top;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .mp-img2{
     margin-top: 25px;
     background-image: url("../img/mp-background2.PNG");
     background-position: top;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .mp-img3{
     margin-top: 25px;
     background-image: url("../img/mp-background3.PNG");
     background-position: top;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: auto;
 }
 
 #mp-side{
@@ -191,10 +192,11 @@ main {
 #mais-vantanges{ 
     margin-top: 25px;
     padding-top: 60px;
+    padding-bottom: 200px;
+    height: auto;
     background-image: url("../img/background-middle-bottom1.PNG");
     background-size: cover;
-    padding-bottom: 50px;
-    height: auto;
+    background-repeat: no-repeat;
 }
 
 #mb-txt{
@@ -203,6 +205,7 @@ main {
 }
 
 #mb-title{
+    margin-top: 50px;
     margin-bottom: 25px;
 }
 
@@ -227,6 +230,7 @@ main {
 }
 
 #pizza{
+    margin-top: 100px;
     padding-top: 50px;
 }
 
@@ -315,6 +319,10 @@ main {
 
 /* SEÇÃO URGENCIA */
 
+#promo{
+    margin-bottom: 50px;
+}
+
 
 #balloon-promo{
     background-color: #f6bc06;
@@ -363,7 +371,7 @@ main {
     background-color: #f6bc06;
     border-radius: 25px;
     border: transparent;
-    height: 40px;
+    min-height: 40px;
     font-size: 22px;
     font-weight: 800;
     color: white;
@@ -371,6 +379,9 @@ main {
     padding-top: 5px;
     padding-left: 25px;
     margin-top: 5px;
+    white-space: normal;
+    word-wrap: break-Word;
+
 }
 
 .card-body-faq {
@@ -388,20 +399,38 @@ footer{
     background-size: cover;
     font-family: 'Overpass', sans-serif;
     text-align: center;
+    padding-top: 150px;
 }
 
+
+
 #title-bottom{
-    padding-top: 100px;
-    font-size: 36px;
-    font-weight: 900;
     color: white;
 }
 
-#contact{
+
+
+.contact{
     background-color: white;
     border-radius: 20px;
+    border-style: none;
     margin: 10px;
     padding: 20px;
+}
+
+.contact:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+    margin-top: -2px;
+    margin-bottom: 2px;
+}
+
+.contact a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+
 }
 
 .c-title{
