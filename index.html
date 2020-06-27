@@ -86,8 +86,13 @@
         <section class="row justify-content-center"  id="cardapio-animado">
             <!-- Celular Exemplo // Adicionar posteriormente: data-aos="fade-up" //-->
             <div class="col-md-4 mp-img1" id="mp">
-                <img  src="./img/mp-img1.PNG"/>
-                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
+                <div class="play" id="cardapioAnimado">
+                    <img alt="Botão de player" src="./img/play.png">
+                </div>
+                <div>
+                    <img class="player" src="./img/mp-img1.PNG"/>
+                    <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
+                </div>
             </div>
             <!-- Conteudo lateral -->
             <div class="col-md-4" id="mp-side">
@@ -169,8 +174,13 @@
             </div>
             <!-- Celular Exemplo -->
             <div class="col-md-4 mp-img2" id="mp">
-                <img src="./img/mp-img2.PNG"/>
-                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
+                <div class="play">
+                    <img alt="Botão de player" src="./img/play.png">
+                </div>
+                <div>
+                    <img class="player" src="./img/mp-img2.PNG"/>
+                    <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
+                </div>
             </div>
         </section>
 
@@ -178,8 +188,13 @@
         <section class="row justify-content-center"  id="chamada-animada">
             <!-- Celular Exemplo -->
             <div class="col-md-4 mp-img3" id="mp">
-                <img src="./img/mp-img3.PNG"/>
-                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
+                <div class="play">
+                    <img alt="Botão de player" src="./img/play.png">
+                </div>
+                <div>
+                    <img class="player" src="./img/mp-img3.PNG"/>
+                    <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
+                </div>
             </div>
             <!-- Conteudo Lateral -->
             <div class="col-md-4" id="mp-side">
@@ -283,21 +298,31 @@
             </div>
 
             <!-- Pacote Completo -->
-            <div class="col-md" id="price-special">
-                <div>
-                    <img class="img-price float-left" src="./img/price-img2.PNG"/>
-                    <h3 class="h-price">Pacote <br>Completo</h3>
+            <div class="col-md " id="price-special">
+                <div class="tarja">
+                    <div class="tarja-up">
+                        <img alt="25% OFF" src="./img/price-special-img.png">
+                    </div>
+                    <div class="tarja-down">
+                        <img src="./img/price-special-img-back.png">
+                    </div>
                 </div>
-                <p class="p-price">De <span class="span-preco">R$1.700</span> por <br>R$1.275 à vista ou <br>5x de <span class="span-price">R$300</span></p>
-                    
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Identidade Visual</p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Animado <span class="span-item">(10 peças)</span></p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Interativo <span class="span-item">(10 produtos)</span></p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Promoção Animada <span class="span-item">(01 produto)</span></p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Chamada Animada</p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Consultoria de marketing</p></div>
+                <div class="conteudo">
+                    <div>
+                        <img class="img-price float-left" src="./img/price-img2.PNG"/>
+                        <h3 class="h-price">Pacote <br>Completo</h3>
+                    </div>
+                    <p class="p-price">De <span class="span-preco">R$1.700</span> por <br>R$1.275 à vista ou <br>5x de <span class="span-price">R$300</span></p>
+                        
+                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Identidade Visual</p></div>
+                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Animado <span class="span-item">(10 peças)</span></p></div>
+                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Interativo <span class="span-item">(10 produtos)</span></p></div>
+                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Promoção Animada <span class="span-item">(01 produto)</span></p></div>
+                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Chamada Animada</p></div>
+                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Consultoria de marketing</p></div>
 
-                <button type="button" class="btn btn-light btn-sm btn-block" id="price-special-button">COMPRAR</button>
+                    <button type="button" class="btn btn-light btn-sm btn-block" id="price-special-button">COMPRAR</button>
+                </div>
             </div>
 
             <!-- Pacote Médio -->
@@ -490,6 +515,16 @@
         </section>
     </footer>
     
+    <div id="modal-exemplo" class="modal-container">
+        <button class="fechar">X</button>
+        <div class="modal-view">
+            <img src="./img/mp-side-txt1.PNG">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/236189239?autoplay=1&loop=1&color=ff9933&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
+        </div>
+    </div>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
     <!-- Parallax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 

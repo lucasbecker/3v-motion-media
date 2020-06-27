@@ -135,6 +135,19 @@ main {
     background-size: auto;
 }
 
+.play:hover, .player:hover{
+    cursor: pointer;
+}
+
+
+
+.play{
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 45px);
+}
+
+
 #mp-side{
     text-align: left;
     margin-top: 25px;
@@ -257,6 +270,7 @@ main {
     margin-left: 10px;
     margin-right: 10px;
     text-align: left;
+    position: relative;
 }
 
 #price-button{
@@ -278,6 +292,25 @@ main {
     background-color: #a8391c;
     color: white;
     border: transparent;
+    z-index: 2;
+}
+
+.tarja{
+    position: absolute;
+    top: 0;
+    left: calc(100% - 215px);
+    margin-top: -18px;
+}
+
+.tarja-up{
+    position: absolute;
+    z-index: 3;
+
+} 
+
+.tarja-down{
+    position: absolute;
+    z-index: -1;
 }
 
 .img-price{
@@ -473,4 +506,61 @@ a.b:hover{
     text-decoration: underline; 
     color: white;
 
+}
+
+/* POP UPS EXEMPLOS */
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.exibe{
+    display: flex;
+}
+
+.modal-view{
+    /*background-color: black;*/
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    position: relative;
+}
+
+@keyframes modal-view{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.exibe .modal-view{
+    animation: modal-view .3s;
+}
+
+.fechar{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: none;
+    background: none;
+    color: #D85532;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.modal-view img{
+    margin-bottom: 25px;
 }
