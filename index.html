@@ -86,13 +86,15 @@
         <section class="row justify-content-center"  id="cardapio-animado">
             <!-- Celular Exemplo // Adicionar posteriormente: data-aos="fade-up" //-->
             <div class="col-md-4 mp-img1" id="mp">
-                <div class="play" id="cardapioAnimado">
-                    <img alt="Botão de player" src="./img/play.png">
+                <div id="cardapioAnimado">
+                    <div class="play" >
+                        <img alt="Botão de player" src="./img/play.png">
+                    </div>
+                    <div>
+                        <img class="player" src="./img/mp-img1.PNG"/>
+                    </div>
                 </div>
-                <div>
-                    <img class="player" src="./img/mp-img1.PNG"/>
-                    <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
-                </div>
+                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
             </div>
             <!-- Conteudo lateral -->
             <div class="col-md-4" id="mp-side">
@@ -174,13 +176,16 @@
             </div>
             <!-- Celular Exemplo -->
             <div class="col-md-4 mp-img2" id="mp">
-                <div class="play">
-                    <img alt="Botão de player" src="./img/play.png">
+                <!-- TROCAR A ID PARA TROCAR A MODAL QUE ABRE -->
+                <div id="cardapioInterativo">
+                    <div class="play">
+                        <img alt="Botão de player" src="./img/play.png">
+                    </div>
+                    <div>
+                        <img class="player" src="./img/mp-img2.PNG"/>
+                    </div>
                 </div>
-                <div>
-                    <img class="player" src="./img/mp-img2.PNG"/>
-                    <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
-                </div>
+                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
             </div>
         </section>
 
@@ -188,13 +193,15 @@
         <section class="row justify-content-center"  id="chamada-animada">
             <!-- Celular Exemplo -->
             <div class="col-md-4 mp-img3" id="mp">
-                <div class="play">
-                    <img alt="Botão de player" src="./img/play.png">
+                <div id="chamadaAnimada">
+                    <div class="play">
+                        <img alt="Botão de player" src="./img/play.png">
+                    </div>
+                    <div>
+                        <img class="player" src="./img/mp-img3.PNG"/>
+                    </div>
                 </div>
-                <div>
-                    <img class="player" src="./img/mp-img3.PNG"/>
-                    <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
-                </div>
+                <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
             </div>
             <!-- Conteudo Lateral -->
             <div class="col-md-4" id="mp-side">
@@ -518,8 +525,42 @@
     <div id="modal-exemplo" class="modal-container">
         <button class="fechar">X</button>
         <div class="modal-view">
-            <img src="./img/mp-side-txt1.PNG">
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/236189239?autoplay=1&loop=1&color=ff9933&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
+            <!-- <img src="./img/mp-side-txt1.PNG">
+            <iframe src="https://player.vimeo.com/video/236189239?autoplay=1&loop=1&color=ff9933&portrait=0" style="position:absolute;top:0;left:0;width:auto;height:100%;" frameborder="0"></iframe> -->
+            <iframe id="exemplo1" src="https://www.youtube.com/embed/qqfMAf3IFE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+            <div class="switch">
+                <button class="btn switch-button" id="button-11">1</button>
+                <button class="btn switch-button" id="button-12">2</button>
+                <button class="btn switch-button" id="button-13">3</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-exemplo2" class="modal-container">
+        <button class="fechar">X</button>
+        <div class="modal-view">
+            <!-- <img src="./img/mp-side-txt1.PNG">
+            <iframe src="https://player.vimeo.com/video/236189239?autoplay=1&loop=1&color=ff9933&portrait=0" style="position:absolute;top:0;left:0;width:auto;height:100%;" frameborder="0"></iframe> -->
+            <iframe id="exemplo2" src="https://www.youtube.com/embed/qqfMAf3IFE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+            <div class="switch">
+                <button class="btn switch-button" id="button-21">1</button>
+                <button class="btn switch-button" id="button-22">2</button>
+                <button class="btn switch-button" id="button-23">3</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-exemplo3" class="modal-container">
+        <button class="fechar">X</button>
+        <div class="modal-view">
+            <!-- <img src="./img/mp-side-txt1.PNG">
+            <iframe src="https://player.vimeo.com/video/236189239?autoplay=1&loop=1&color=ff9933&portrait=0" style="position:absolute;top:0;left:0;width:auto;height:100%;" frameborder="0"></iframe> -->
+            <iframe id="exemplo3" src="https://www.youtube.com/embed/qqfMAf3IFE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+            <div class="switch">
+                <button class="btn switch-button" id="button-31">1</button>
+                <button class="btn switch-button" id="button-32">2</button>
+                <button class="btn switch-button" id="button-33">3</button>
+            </div>
         </div>
     </div>
 
