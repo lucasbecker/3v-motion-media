@@ -342,9 +342,13 @@ main {
     font-weight: 200;
 }
 
-.span-preco{
+#span-risco{
     text-decoration: line-through;
     text-decoration-color: #a8391c;
+}
+
+#span-parcela-normal{
+    display: none;
 }
 
 .item{

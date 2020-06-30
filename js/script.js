@@ -24,60 +24,97 @@ function iniciaPopUp(modalID, iframeID){
     }
 }
 
-const player = document.querySelector('#cardapioAnimado');
-player.addEventListener('click', () => {
+document.querySelector('#cardapioAnimado').addEventListener('click', () => {
     iniciaPopUp('modal-exemplo', 'exemplo1');
 })
 
-const player2 = document.querySelector('#cardapioInterativo');
-player2.addEventListener('click', () => {
+document.querySelector('#cardapioInterativo').addEventListener('click', () => {
     iniciaPopUp('modal-exemplo2', 'exemplo2');
 })
 
-const player3 = document.querySelector('#chamadaAnimada');
-player3.addEventListener('click', () => {
+document.querySelector('#chamadaAnimada').addEventListener('click', () => {
     iniciaPopUp('modal-exemplo3', 'exemplo3');
 })
+
+var videosCardapioAnimado = [
+    'https://www.youtube.com/embed/qqfMAf3IFE0', 
+    'https://www.youtube.com/embed/I-RgNNaF8rw', 
+    `https://www.youtube.com/embed/3_52H8bk9WQ`
+];
+
+var videosCardapioInterativo = [
+    'https://www.youtube.com/embed/qqfMAf3IFE0', 
+    'https://www.youtube.com/embed/I-RgNNaF8rw', 
+    `https://www.youtube.com/embed/3_52H8bk9WQ`
+];
+
+var videosChamadaAnimada = [
+    'https://www.youtube.com/embed/qqfMAf3IFE0', 
+    'https://www.youtube.com/embed/I-RgNNaF8rw', 
+    `https://www.youtube.com/embed/3_52H8bk9WQ`
+];
 
 /* Botões dos POP-UPs */
 // MELHORAR SE POSSIVEL
 document.getElementById('button-11').addEventListener('click', () => {
-    document.getElementById('exemplo1').src = `https://www.youtube.com/embed/qqfMAf3IFE0`;
+    document.getElementById('exemplo1').src = videosCardapioAnimado[0];
 })
 document.getElementById('button-12').addEventListener('click', () => {
-    document.getElementById('exemplo1').src = `https://www.youtube.com/embed/I-RgNNaF8rw`;
+    document.getElementById('exemplo1').src = videosCardapioAnimado[1];
 })
 document.getElementById('button-13').addEventListener('click', () => {
-    document.getElementById('exemplo1').src = `https://www.youtube.com/embed/3_52H8bk9WQ`;
+    document.getElementById('exemplo1').src = videosCardapioAnimado[2];
 })
 
 document.getElementById('button-21').addEventListener('click', () => {
-    document.getElementById('exemplo2').src = `https://www.youtube.com/embed/qqfMAf3IFE0`;
+    document.getElementById('exemplo2').src = videosCardapioInterativo[0];
 })
 document.getElementById('button-22').addEventListener('click', () => {
-    document.getElementById('exemplo2').src = `https://www.youtube.com/embed/I-RgNNaF8rw`;
+    document.getElementById('exemplo2').src = videosCardapioInterativo[1];
 })
 document.getElementById('button-23').addEventListener('click', () => {
-    document.getElementById('exemplo2').src = `https://www.youtube.com/embed/3_52H8bk9WQ`;
+    document.getElementById('exemplo2').src = videosCardapioInterativo[2];
 })
 
 document.getElementById('button-31').addEventListener('click', () => {
-    document.getElementById('exemplo3').src = `https://www.youtube.com/embed/qqfMAf3IFE0`;
+    document.getElementById('exemplo3').src = videosChamadaAnimada[0];
 })
 document.getElementById('button-32').addEventListener('click', () => {
-    document.getElementById('exemplo3').src = `https://www.youtube.com/embed/I-RgNNaF8rw`;
+    document.getElementById('exemplo3').src = videosChamadaAnimada[1];
 })
 document.getElementById('button-33').addEventListener('click', () => {
-    document.getElementById('exemplo3').src = `https://www.youtube.com/embed/3_52H8bk9WQ`;
+    document.getElementById('exemplo3').src = videosChamadaAnimada[2];
 })
 
 // CONTADOR REGRESSIVO
 // new Date(ano, mês, dia, hora, minuto, segundo, milissegundo);
-var dataFinal = new Date(2020,6,3).getTime();
-var dataInicial = new Date(2020,5,29).getTime();
+var dataFinal = new Date(2020, 6, 3, 23, 59).getTime();
+//var dataFinal = new Date(202, 5, 29).getTime();
+var dataInicial = new Date(2020, 5, 28).getTime();
 var dias, horas, minutos, segundos;
 
-setInterval(() => {
+function barraProgresso(){
+    var total = dataFinal - dataInicial;
+    var atual = new Date().getTime();
+    var percent = dataFinal - atual;
+    var falta = (percent *100 ) / total;
+    var progresso = 100 - falta;
+
+    var barra = document.getElementById('barraProgresso');
+    barra.style.width = (progresso.toFixed(0)-1) + '%';
+    barra.innerHTML = (progresso.toFixed(0)-1) + '% do limite máximos de pacotes vendidos' ;
+
+    if(atual >= dataFinal){
+        document.getElementById('promo').style.display = 'none';
+        document.getElementById('off').style.display = 'none';
+        document.getElementById('span-risco').style.textDecoration = 'none';
+        document.getElementById('span-promo').style.display = 'none';
+        document.getElementById('span-parcela-promo').style.display = 'none';
+        document.getElementById('span-parcela-normal').style.display = 'inline';
+    }
+}
+
+function contagemRegressiva(){
     var dataAtual = new Date().getTime();
 
     segundos = (dataFinal - dataAtual)/1000;
@@ -93,19 +130,7 @@ setInterval(() => {
     document.getElementById('dias').innerHTML = ('00' + dias).slice(-2);
     document.getElementById('horas').innerHTML = ('00' + horas).slice(-2);
     document.getElementById('minutos').innerHTML = ('00' + minutos).slice(-2);
-}, 1000);
-
-
-function barraProgresso(){
-    var total = dataFinal - dataInicial;
-    var atual = new Date().getTime();
-    var percent = dataFinal - atual;
-    var falta = (percent *100 ) / total;
-    var progresso = 100 - falta;
-
-    var barra = document.getElementById('barraProgresso');
-    barra.style.width = progresso.toFixed(0) + '%';
-    barra.innerHTML = progresso.toFixed(0) + '% do limite máximos de pacotes vendidos' ;
+    barraProgresso();
 }
 
-barraProgresso();
+setInterval(contagemRegressiva(), 1000);
