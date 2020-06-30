@@ -385,14 +385,23 @@ main {
 
 #barra-regressiva{
     background-color: #f6bc06;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0; 
+    margin: 10px;
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+#barraProgresso{
+    background-color: #D85532;
+    border-radius: 25px;
     color: white;
     font-size: 24px;
     font-weight: 800;
-    border-radius: 25px;
-    margin: 10px;
-    padding: 10px;
-    height: 50px;
-    text-align: center;
+    padding-top: 5px;
+    padding-left: 25px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.30);
 }
 
 /* FAQ */
