@@ -295,6 +295,10 @@ main {
     z-index: 2;
 }
 
+.link-btn, .link-btn:hover{
+    text-decoration: none;
+}
+
 .tarja{
     position: absolute;
     top: 0;

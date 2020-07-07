@@ -88,7 +88,7 @@ document.getElementById('button-33').addEventListener('click', () => {
 
 // CONTADOR REGRESSIVO
 // new Date(ano, mês, dia, hora, minuto, segundo, milissegundo);
-var dataFinal = new Date(2020, 6, 3, 23, 59).getTime();
+var dataFinal = new Date(2020, 6, 12, 23, 59).getTime();
 //var dataFinal = new Date(202, 5, 29).getTime();
 var dataInicial = new Date(2020, 5, 28).getTime();
 var dias, horas, minutos, segundos;

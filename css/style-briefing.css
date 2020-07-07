@@ -69,13 +69,30 @@ label{
     font-size: 1em;
 }
 
+#botao-enviar{
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #d85532;
+    color: white;
+    border: transparent;
+}
+
+#botao-enviar:hover{
+    background-color: #a8391c;
+}
+
 /* FOOTER */
 footer{
     background-image: url("../img/background-bottom.PNG");
     background-size: cover;
     font-family: 'Overpass', sans-serif;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 25px;
     margin-top: 50px;
 }
 
