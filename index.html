@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="container-fluid justify-content-center">
         <!-- Banner -->
         <section class="row justify-content-center" id="banner">
@@ -60,17 +61,17 @@
         <!-- Balões -->
         <section class="row justify-content-center" id="balloons">
             <div class="col-2"></div>
-            <div class="col-md" id="balloon">
+            <div class="col-md" id="balloon" data-aos="zoom-in">
                 <img class="balloon-icon float-left" src="img/balloon-img1.PNG"/>
                 <p class="balloon-h">Chame <br>atenção</p>
                 <p class="balloon-p">Tenha uma comunicação visual que encha os olhos do seu público destacando-se no meio da multidão digital com uma identidade visual completamente singular.</p>
             </div>
-            <div class="col-md" id="balloon">
+            <div class="col-md" id="balloon" data-aos="zoom-in">
                 <img class="balloon-icon float-left" src="img/balloon-img2.PNG"/>
                 <p class="balloon-h">Fidelize <br>seu público</p>
                 <p class="balloon-p">Prenda seus clientes com chamadas atraentes e promoções interessantes, criando mais engajamento nas suas redes sociais e, consequentemente, seja mais lembrado na hora da escolha.</p>
             </div>
-            <div class="col-md" id="balloon">
+            <div class="col-md" id="balloon" data-aos="zoom-in">
                 <img class="balloon-icon float-left" src="img/balloon-img3.PNG"/>
                 <p class="balloon-h">Atinga mais <br>pessoas</p>
                 <p class="balloon-p">Mostre profissionalismo e qualidade nas suas redes, isto atrai mais pessoas interessadas no seu produto aumentando sua procura e melhoria na conversão.</p>
@@ -80,6 +81,7 @@
 
     </header>
 
+    <!-- MAIN -->
     <main class="container-fluid justify-content-center">
         
         <!-- Ofertas -->
@@ -255,17 +257,21 @@
             <div class="col-md-4" id="mb-txt">
                 <img src="./img/middle-bottom-txt.PNG" id="mb-title"/>
                 <div>
-                    <img class="check float-left" src="./img/check-white.PNG"/>
-                    <h3 class="h-mb">Identidade Visual</h3>
-                    <p class="p-mb">Tenha mídias que sejam a cara do seu negócio e atraia mais a atenção do público certo.</p>
-                    
-                    <img class="check float-left" src="./img/check-white.PNG"/>
-                    <h3 class="h-mb">Consultoria de Marketing</h3>
-                    <p class="p-mb">Saiba como direcionar suas mídias de forma otimizada melhorando seus resultados e sua conversão em vendas.</p>
-                    
-                    <img class="check float-left" src="./img/check-white.PNG"/>
-                    <h3 class="h-mb">Promoção Animada</h3>
-                    <p class="p-mb">Tenha uma promoção animada para atrair novos clientes além de fidelizar sua audiência já existente.</p>
+                    <div data-aos="fade-left">
+                        <img class="check float-left" src="./img/check-white.PNG"/>
+                        <h3 class="h-mb">Identidade Visual</h3>
+                        <p class="p-mb">Tenha mídias que sejam a cara do seu negócio e atraia mais a atenção do público certo.</p>
+                    </div>
+                    <div data-aos="fade-left">
+                        <img class="check float-left" src="./img/check-white.PNG"/>
+                        <h3 class="h-mb">Consultoria de Marketing</h3>
+                        <p class="p-mb">Saiba como direcionar suas mídias de forma otimizada melhorando seus resultados e sua conversão em vendas.</p>
+                    </div>
+                    <div data-aos="fade-left">
+                        <img class="check float-left" src="./img/check-white.PNG"/>
+                        <h3 class="h-mb">Promoção Animada</h3>
+                        <p class="p-mb">Tenha uma promoção animada para atrair novos clientes além de fidelizar sua audiência já existente.</p>
+                    </div>
                 </div>
                 
             </div>
@@ -347,6 +353,10 @@
                     </div>
                     <div id="btn-real">
                         <a class="link-btn" href="briefing-completo.html"><button type="button" class="btn btn-light btn-sm btn-block" id="price-button">COMPRAR</button></a>
+                        <!-- <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="585264095-30469d55-2e28-4309-933d-43d8808496ba" data-button-label="COMPRAR">
+                        </script>
+                         -->
                     </div>      
 
                 </div>
@@ -374,6 +384,9 @@
                 </script>-->
             </div>
             <div class="col-md-2"></div>
+            <!--<div class="row">
+                <p class="legenda"><small>*NO CARTÃO DE CRÉDITO ATRAVÉS DO MERCADO PAGO</small></p>
+            </div>-->
         </section>
 
         <!-- Urgencia -->
@@ -516,21 +529,21 @@
         <section class="row justify-content-center" id="bottom-middle">
             <div class="col-md-2"></div>
 
-                <button class="col contact">
+                <button class="col-md contact">
                     <a href="mailto:william.viana2@gmail.com">
                         <img src="./img/email.PNG" class="c-img"/>
                         <h3 class="c-title">E-mail</h3>
                         <p class="c-txt">william.viana2@gmail.com</p>
                     </a>
                 </button>
-                <button class="col contact">
+                <button class="col-md contact">
                     <a href="https://api.whatsapp.com/send?phone=5548991286811" target="_blank">
                         <img src="./img/wpp.PNG" class="c-img"/>
                         <h3 class="c-title">Whatsapp</h3>
                         <p class="c-txt">(48) 9 9128-6811</p>
                     </a>
                 </button>
-                <button class="col contact">
+                <button class="col-md contact">
                     <a href="tel:4835242560">
                         <img src="./img/phone.PNG" class="c-img"/>
                         <h3 class="c-title">Telefone</h3>

@@ -363,7 +363,9 @@ button.mercadopago-button {
     display: none;
 }
 
-
+.legenda{
+    color: #a8391c;
+}
 
 .item{
     font-weight: 700;
