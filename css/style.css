@@ -6,7 +6,7 @@ html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
+    /*height: 100%;*/
     font-family: 'Overpass', sans-serif;
     width: 100vw;
 }
@@ -93,7 +93,6 @@ main {
     font-family: 'Overpass', sans-serif;
     text-align: center;
     min-height: 100%;
-
 }
 
 .title {
@@ -138,8 +137,6 @@ main {
 .play:hover, .player:hover{
     cursor: pointer;
 }
-
-
 
 .play{
     position: absolute;
@@ -283,6 +280,17 @@ main {
     border: transparent;
 }
 
+button.mercadopago-button {
+    margin-top: 25px;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 900;
+    color: #a8391c;
+    background-color: white;
+    border: transparent;
+}
+
 #price-special-button{
     padding-top: 10px;
     margin-top: 25px;
@@ -351,9 +359,11 @@ main {
     text-decoration-color: #a8391c;
 }
 
-#span-parcela-normal{
+#span-parcela-normal, #btn-real{
     display: none;
 }
+
+
 
 .item{
     font-weight: 700;

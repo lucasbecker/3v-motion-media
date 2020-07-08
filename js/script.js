@@ -37,21 +37,21 @@ document.querySelector('#chamadaAnimada').addEventListener('click', () => {
 })
 
 var videosCardapioAnimado = [
-    'https://www.youtube.com/embed/qqfMAf3IFE0', 
-    'https://www.youtube.com/embed/I-RgNNaF8rw', 
-    `https://www.youtube.com/embed/3_52H8bk9WQ`
+    'https://www.youtube.com/embed/56-K8onpnq0', 
+    'https://www.youtube.com/embed/KgE_LNxaWeA', 
+    'https://www.youtube.com/embed/aXL3C7Ox1No'
 ];
 
 var videosCardapioInterativo = [
-    'https://www.youtube.com/embed/qqfMAf3IFE0', 
-    'https://www.youtube.com/embed/I-RgNNaF8rw', 
-    `https://www.youtube.com/embed/3_52H8bk9WQ`
+    'https://www.youtube.com/embed/2PL8_nV3k2s', 
+    'https://www.youtube.com/embed/ZUybjChBNq4', 
+    'https://www.youtube.com/embed/khBhkADH7RE'
 ];
 
 var videosChamadaAnimada = [
-    'https://www.youtube.com/embed/qqfMAf3IFE0', 
-    'https://www.youtube.com/embed/I-RgNNaF8rw', 
-    `https://www.youtube.com/embed/3_52H8bk9WQ`
+    'https://www.youtube.com/embed/BHBztcITmJY', 
+    'https://www.youtube.com/embed/3pcq48Tgd9g', 
+    'https://www.youtube.com/embed/JAzDkE7qFlc'
 ];
 
 /* Botões dos POP-UPs */
@@ -87,9 +87,8 @@ document.getElementById('button-33').addEventListener('click', () => {
 })
 
 // CONTADOR REGRESSIVO
-// new Date(ano, mês, dia, hora, minuto, segundo, milissegundo);
+// new Date(ano, mês, dia, hora, minuto, segundo, milissegundo);     12
 var dataFinal = new Date(2020, 6, 12, 23, 59).getTime();
-//var dataFinal = new Date(202, 5, 29).getTime();
 var dataInicial = new Date(2020, 5, 28).getTime();
 var dias, horas, minutos, segundos;
 
@@ -108,12 +107,15 @@ function barraProgresso(){
         document.getElementById('promo').style.display = 'none';
         document.getElementById('off').style.display = 'none';
         document.getElementById('span-risco').style.textDecoration = 'none';
-        document.getElementById('span-promo').style.display = 'none';
+        document.getElementById('span-promo1').style.display = 'none';
+        document.getElementById('span-promo2').style.display = 'none';
         document.getElementById('span-parcela-promo').style.display = 'none';
         document.getElementById('span-parcela-normal').style.display = 'inline';
+        document.getElementById('btn-promo').style.display = 'none';
+        document.getElementById('btn-real').style.display = 'inline';
     }
 }
-
+/*
 function contagemRegressiva(){
     var dataAtual = new Date().getTime();
 
@@ -133,4 +135,23 @@ function contagemRegressiva(){
     barraProgresso();
 }
 
-setInterval(contagemRegressiva(), 1000);
+setInterval(contagemRegressiva(), 1000);*/
+
+setInterval( () => {
+    var dataAtual = new Date().getTime();
+
+    segundos = (dataFinal - dataAtual)/1000;
+
+    dias = parseInt(segundos/86400);
+    segundos = segundos % 86400;
+
+    horas = parseInt(segundos / 3600);
+    segundos = segundos % 3600;
+
+    minutos = parseInt(segundos / 60);
+
+    document.getElementById('dias').innerHTML = ('00' + dias).slice(-2);
+    document.getElementById('horas').innerHTML = ('00' + horas).slice(-2);
+    document.getElementById('minutos').innerHTML = ('00' + minutos).slice(-2);
+    barraProgresso();
+},1000);

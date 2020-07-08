@@ -30,11 +30,12 @@ header{
     font-size: 42px;
     font-weight: 900;
     color: #ffffff;
+    margin-bottom: 25px;
 }
 
 #topo p{
-    text-align: center;
-    font-size: 26px;
+    text-align: justify;
+    font-size: 24px;
     font-weight: 300;
     color: #ffffff;
     padding-bottom: 25px;
@@ -57,11 +58,18 @@ header{
 
 .subtitle {
     text-align: center;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 600;
     color: #ec9413;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.text{
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 600;
+    color: #a8391c;
 }
 
 label{

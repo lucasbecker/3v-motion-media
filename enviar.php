@@ -62,11 +62,56 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
     $nomeProduto10 = addcslashes($_POST['nome-produto-10']);
     $descricaoProduto10 = addcslashes($_POST['descricao-produto-10']);
     $valorProduto10 = addcslashes($_POST['valor-produto-10']);
+
+    $nomeProduto11 = addcslashes($_POST['nome-produto-11']);
+    $descricaoProduto11 = addcslashes($_POST['descricao-produto-11']);
+    $valorProduto11 = addcslashes($_POST['valor-produto-11']);
+
+    $nomeProduto12 = addcslashes($_POST['nome-produto-12']);
+    $descricaoProduto12 = addcslashes($_POST['descricao-produto-12']);
+    $valorProduto12 = addcslashes($_POST['valor-produto-12']);
+
+    $nomeProduto13 = addcslashes($_POST['nome-produto-13']);
+    $descricaoProduto13 = addcslashes($_POST['descricao-produto-13']);
+    $valorProduto13 = addcslashes($_POST['valor-produto-13']);
+
+    $nomeProduto14 = addcslashes($_POST['nome-produto-14']);
+    $descricaoProduto14 = addcslashes($_POST['descricao-produto-14']);
+    $valorProduto14 = addcslashes($_POST['valor-produto-14']);
+
+    $nomeProduto15 = addcslashes($_POST['nome-produto-15']);
+    $descricaoProduto15 = addcslashes($_POST['descricao-produto-15']);
+    $valorProduto15 = addcslashes($_POST['valor-produto-15']);
+
+    $nomeProduto16 = addcslashes($_POST['nome-produto-16']);
+    $descricaoProduto16 = addcslashes($_POST['descricao-produto-16']);
+    $valorProduto16 = addcslashes($_POST['valor-produto-16']);
+
+    $nomeProduto17 = addcslashes($_POST['nome-produto-17']);
+    $descricaoProduto17 = addcslashes($_POST['descricao-produto-17']);
+    $valorProduto17 = addcslashes($_POST['valor-produto-17']);
+
+    $nomeProduto18 = addcslashes($_POST['nome-produto-18']);
+    $descricaoProduto18 = addcslashes($_POST['descricao-produto-18']);
+    $valorProduto18 = addcslashes($_POST['valor-produto-18']);
+
+    $nomeProduto19 = addcslashes($_POST['nome-produto-19']);
+    $descricaoProduto19 = addcslashes($_POST['descricao-produto-19']);
+    $valorProduto19 = addcslashes($_POST['valor-produto-19']);
+
+    $nomeProduto20 = addcslashes($_POST['nome-produto-20']);
+    $descricaoProduto20 = addcslashes($_POST['descricao-produto-20']);
+    $valorProduto20 = addcslashes($_POST['valor-produto-20']);
     
-    $nomePromocao = addcslashes($_POST['nome-promocao']);
-    $descricaoPromocao = addcslashes($_POST['descricao-promocao']);
-    $valorRealPromocao = addcslashes($_POST['valor-real-promocao']);
-    $valorPromocao = addcslashes($_POST['valor-promocao']);
+    $nomePromocao1 = addcslashes($_POST['nome-promocao-1']);
+    $descricaoPromocao1 = addcslashes($_POST['descricao-promocao-1']);
+    $valorRealPromocao1 = addcslashes($_POST['valor-real-promocao-1']);
+    $valorPromocao1 = addcslashes($_POST['valor-promocao-1']);
+
+    $nomePromocao2 = addcslashes($_POST['nome-promocao-2']);
+    $descricaoPromocao2 = addcslashes($_POST['descricao-promocao-2']);
+    $valorRealPromocao2 = addcslashes($_POST['valor-real-promocao-2']);
+    $valorPromocao2 = addcslashes($_POST['valor-promocao-2']);
 
     $chamadaAnimada = addcslashes($_POST['chamada-animada']);
 
@@ -135,16 +180,61 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
             .'Nome: '.$nomeProduto10.'\r\n'
             .'Descrição: '.$descricaoProduto10.'\r\n'
             .'valor: '.$valorProduto10.'\r\n'
+            .'<strong>Produto 11</strong>\r\n'
+            .'Nome: '.$nomeProduto11.'\r\n'
+            .'Descrição: '.$descricaoProduto11.'\r\n'
+            .'valor: '.$valorProduto11.'\r\n'
+            .'<strong>Produto 12</strong>\r\n'
+            .'Nome: '.$nomeProduto12.'\r\n'
+            .'Descrição: '.$descricaoProduto12.'\r\n'
+            .'valor: '.$valorProduto12.'\r\n'
+            .'<strong>Produto 13</strong>\r\n'
+            .'Nome: '.$nomeProduto13.'\r\n'
+            .'Descrição: '.$descricaoProduto13.'\r\n'
+            .'valor: '.$valorProduto13.'\r\n'
+            .'<strong>Produto 14</strong>\r\n'
+            .'Nome: '.$nomeProduto14.'\r\n'
+            .'Descrição: '.$descricaoProduto14.'\r\n'
+            .'valor: '.$valorProduto14.'\r\n'
+            .'<strong>Produto 15</strong>\r\n'
+            .'Nome: '.$nomeProduto15.'\r\n'
+            .'Descrição: '.$descricaoProduto15.'\r\n'
+            .'valor: '.$valorProduto15.'\r\n'
+            .'<strong>Produto 16</strong>\r\n'
+            .'Nome: '.$nomeProduto16.'\r\n'
+            .'Descrição: '.$descricaoProduto16.'\r\n'
+            .'valor: '.$valorProduto16.'\r\n'
+            .'<strong>Produto 17</strong>\r\n'
+            .'Nome: '.$nomeProduto17.'\r\n'
+            .'Descrição: '.$descricaoProduto17.'\r\n'
+            .'valor: '.$valorProduto17.'\r\n'
+            .'<strong>Produto 18</strong>\r\n'
+            .'Nome: '.$nomeProduto18.'\r\n'
+            .'Descrição: '.$descricaoProduto18.'\r\n'
+            .'valor: '.$valorProduto18.'\r\n'
+            .'<strong>Produto 19</strong>\r\n'
+            .'Nome: '.$nomeProduto19.'\r\n'
+            .'Descrição: '.$descricaoProduto19.'\r\n'
+            .'valor: '.$valorProduto19.'\r\n'
+            .'<strong>Produto 20</strong>\r\n'
+            .'Nome: '.$nomeProduto20.'\r\n'
+            .'Descrição: '.$descricaoProduto20.'\r\n'
+            .'valor: '.$valorProduto20.'\r\n'
             .'<hr><strong>Promoção e Chamada</strong>\r\n'
-            .'<strong>Produto na Promoção</strong>\r\n'
-            .'Nome: '.$nomePromocao.'\r\n'
-            .'Descrição: '.$descricaoPromocao.'\r\n'
-            .'Valor Real: '.$valorRealPromocao.'\r\n'
-            .'Valor Promoção: '.$valorPromocao.'\r\n'
+            .'<strong>Produto na Promoção 1</strong>\r\n'
+            .'Nome: '.$nomePromocao1.'\r\n'
+            .'Descrição: '.$descricaoPromocao1.'\r\n'
+            .'Valor Real: '.$valorRealPromocao1.'\r\n'
+            .'Valor Promoção: '.$valorPromocao1.'\r\n'
+            .'<strong>Produto na Promoção 2</strong>\r\n'
+            .'Nome: '.$nomePromocao2.'\r\n'
+            .'Descrição: '.$descricaoPromocao2.'\r\n'
+            .'Valor Real: '.$valorRealPromocao2.'\r\n'
+            .'Valor Promoção: '.$valorPromocao2.'\r\n'
             .'<strong>Chamada Animada</strong>\r\n'
             .'Informações: '.$chamadaAnimada.'\r\n'
             .'<hr><strong>Observações</strong>\r\n'
-            .'Obs.: '.$outrasObservacoes.'\r\n';
+            .'Obs.: '.$outrasObservacoes.'\r\n<hr>';
 
     // E-mail que enviará, ou seja, o e-mail da hospedagem/dominio
     $header = "From:email@dominio.com"."\r\n"
