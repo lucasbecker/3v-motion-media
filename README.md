@@ -1,4 +1,4 @@
-# Landing Page - 3v Motion Media
+# 3v Motion Media - Landing Page
 > Cardápio animado, cardápio interativo e chamada animada.
 
 ## Overview
@@ -21,7 +21,7 @@ O Parallax.js cria o *efeito parallax* através da posição do cursor, do giros
 
 ## Deploy
 
-O deploy inicial do página foi feito com o *github-pages* e está disponível [aqui](). **E a página já está em produção [aqui](https://3vmotion.com/cardapio/)**.
+O deploy inicial do página foi feito com o *github-pages* e está disponível [aqui](https://lucasbecker.github.io/3v-motion-media/). **E a página já está em produção [aqui](https://3vmotion.com/cardapio/)**.
 
 ## License
 
