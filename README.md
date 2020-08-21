@@ -1,8 +1,7 @@
 # 3v Motion Media - Landing Page
-> Cardápio animado, cardápio interativo e chamada animada.
 
 ## Overview
-Este projeto é uma **landing page** da 3v Motion Media para vender os serviços de cardápio animado, cardápio interativo e chamada animada. 
+Este projeto é uma **landing page** da [3v Motion Media](https://3vmotion.com) para vender os serviços de cardápio animado, cardápio interativo e chamada animada. 
 
 ## Development
 Design e idealização da página realizada pela própria 3v Motion Media. O desenvolvimento por sua vez foi realizada com JavaScript, HTML e CSS. E utilizando o framework e bibliotecas a seguir.
