@@ -5,25 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="Aumente o faturamento do seu delivery com as ferramentas especiais da 3v Motion Media. Tenha uma identidade visual totalmente personalizada e exclusiva para chamar a atenção, fidelizar seu público e atinjir mais pessoas. Você terá acesso a cardápio animado, cardápio interativo e chamadas animadas para compor sua presença digital. Além disso você terá acesso também a uma consultoria de marketing e promoções animadas. Faça agora mesmo seu orçamento sem compromisso.">
+    <meta name="description" content="Aumente o faturamento do seu delivery com as ferramentas especiais da 3v Motion Media. Tenha uma identidade visual totalmente personalizada e exclusiva para chamar a atenção, fidelizar seu público e atingir mais pessoas. Você terá acesso a cardápio animado, cardápio interativo e chamadas animadas para compor sua presença digital. Além disso você terá acesso também a uma consultoria de marketing e promoções animadas. Faça agora mesmo seu orçamento sem compromisso.">
     <meta name="keywords" content="Motion, Movimento, Animação, Video, Cardápio, Food, Delivery, Identidade visual, Chamadas, Marketing, Marketing Digital, Criativos, Design Gráfico, Motion Design, Design de Movimento, Presença Digital, Mídias Sociais, Social Media, Card para Instagram, Aumentar faturamento, Vender mais">
-
-    <meta name="robots" content="index, follow">
     
+    <meta name="robots" content="noindex">
     
     <!-- Titulo da página -->
-    <title>3v Motion Media</title>
-    <link rel="shortcut icon" href="img/favicon.png" />
+    <title>Cardápio – 3V Motion Media</title>
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Titan+One&display=swap" rel="stylesheet">
 
     <!-- Bootstrap, AOS e CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 
 </head>
-
 <body>
     <!-- HEADER -->
     <header class="container-fluid justify-content-center">
@@ -31,50 +29,50 @@
         <section class="row justify-content-center" id="banner">
             <div class="col-md-4" id="banner-left">
                 <div>
-                    <img alt="Aumente o faturamento do seu delivery em até 207%" src="./img/banner-txt.png" id="banner-txt"/>
+                    <h1 class="banner-txt">AUMENTE <span class="span-banner">O FATURAMENTO DO SEU SEU DELIVERY</span> EM ATÉ 207%</h1>
                 </div>
                 <div>
-                    <a href="#topo-preco"><button type="button" class="btn btn-light" id="banner-button">COMPRAR</button></a>
+                    <a id="button-banner" href="#topo-preco"><button type="button" class="btn btn-light" id="banner-button">COMPRAR</button></a>
                 </div>
             </div>
             <div class="col-md-4" id="banner-right">
-                <ul id="scene">
-                    <li class="layer" data-depth="0.3"> 
-                        <img src="./img/parallax1.PNG"/>
-                    </li>
-                    <li class="layer parallax-padding" data-depth="0.6" > 
-                        <img src="./img/parallax2.PNG"/>
-                    </li>
-                    <li class="layer parallax-padding" data-depth="0.9" > 
-                        <img src="./img/parallax3.PNG"/>
-                    </li>
-                    <li class="layer parallax-padding" data-depth="1.2" > 
-                        <img src="./img/parallax4.PNG"/>
-                    </li>
-                    <li class="layer parallax-padding" data-depth="1.5" > 
-                        <img src="./img/parallax5.PNG"/>
-                    </li>
-                </ul>
+                <div id="scene">
+                    <div class="layer parallax-padding" data-depth="0.3"> 
+                        <img alt="Background do parallax do banner" width="380px" src="./images/background-hamburguer-1.svg"/>
+                    </div>
+                    <div class="layer parallax-padding" data-depth="0.6" > 
+                        <img alt="Detalhe de camada do parallax" width="380px" src="./images/background-hamburguer-2.svg"/>
+                    </div>
+                    <div class="layer parallax-padding" data-depth="0.9" > 
+                        <img alt="Detalhe de camada do parallax" width="380px" src="./images/background-hamburguer-3.svg"/>
+                    </div>
+                    <div class="layer parallax-padding" data-depth="1.2" > 
+                        <img alt="Detalhe de camada do parallax" width="380px" src="./images/background-hamburguer-4.svg"/>
+                    </div>
+                    <div class="layer parallax-main" data-depth="1.5" > 
+                        <img alt="Hambúrguer, imagem principal do parallax" id="burguer" src="./images/hamburguer.png"/>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Balões -->
         <section class="row justify-content-center" id="balloons">
             <div class="col-2"></div>
-            <div class="col-md" id="balloon" data-aos="zoom-in">
-                <img class="balloon-icon float-left" src="img/balloon-img1.PNG"/>
+            <div class="col-md balloon" id="balloon" data-aos="zoom-in">
+                <div class="lottie anim-top balloon-icon circle float-left" id="olho-animated"></div>
                 <p class="balloon-h">Chame <br>atenção</p>
                 <p class="balloon-p">Tenha uma comunicação visual que encha os olhos do seu público destacando-se no meio da multidão digital com uma identidade visual completamente singular.</p>
             </div>
-            <div class="col-md" id="balloon" data-aos="zoom-in">
-                <img class="balloon-icon float-left" src="img/balloon-img2.PNG"/>
+            <div class="col-md balloon" id="balloon" data-aos="zoom-in">
+                <div class="lottie anim-top balloon-icon circle float-left" id="like-animated"></div>
                 <p class="balloon-h">Fidelize <br>seu público</p>
-                <p class="balloon-p">Prenda seus clientes com chamadas atraentes e promoções interessantes, criando mais engajamento nas suas redes sociais e, consequentemente, seja mais lembrado na hora da escolha.</p>
+                <p class="balloon-p">Conquiste seus clientes com chamadas atraentes e promoções interessantes, criando mais engajamento nas suas redes sociais e, consequentemente, seja mais lembrado na hora da escolha.</p>
             </div>
-            <div class="col-md" id="balloon" data-aos="zoom-in">
-                <img class="balloon-icon float-left" src="img/balloon-img3.PNG"/>
-                <p class="balloon-h">Atinga mais <br>pessoas</p>
-                <p class="balloon-p">Mostre profissionalismo e qualidade nas suas redes, isto atrai mais pessoas interessadas no seu produto aumentando sua procura e melhoria na conversão.</p>
+            <div class="col-md balloon" id="balloon" data-aos="zoom-in">
+                <div class="lottie anim-top balloon-icon circle float-left" id="flecha-animated"></div>
+                <p class="balloon-h">Atinja mais <br>pessoas</p>
+                <p class="balloon-p">Mostre profissionalismo e qualidade nas suas redes, atraindo mais pessoas interessadas no seu produto aumentando sua procura e melhoria na conversão.</p>
             </div>
             <div class="col-2"></div>
         </section>
@@ -87,21 +85,16 @@
         <!-- Ofertas -->
         <div class="row justify-content-center" id="topo-ofertas">
             <div class="col-md-8 ">
-                <h1 class="title">Conheça nossas ofertas especiais</h1>
-                <p class="subtitle">Separamos as melhores ferramentas do mercado para você e com um valor acessível que cabe no seu bolso</p>
+                <h2 class="title">Conheça as melhores ferramentas do mercado que separamos especialmente para você</h2>
             </div>
         </div>
 
         <!-- Cardapio Animado -->
         <section class="row justify-content-center" id="cardapio-animado" data-aos="fade-up">
-            <!-- Celular Exemplo // Adicionar posteriormente: data-aos="fade-up" //-->
             <div class="col-md-4 mp-img1" id="mp">
                 <div id="cardapioAnimado">
-                    <div class="play" >
-                        <img alt="Botão de player" src="./img/play.png">
-                    </div>
                     <div>
-                        <img class="player" src="./img/mp-img1.PNG"/>
+                        <img class="player" alt="Celular com imagem de exemplo e botão de play" src="./images/cardapio-animado.png"/>
                     </div>
                 </div>
                 <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
@@ -109,34 +102,37 @@
             <!-- Conteudo lateral -->
             <div class="col-md-4" id="mp-side">
                 <!-- Imagem Titulo -->
-                <img class="mp-side-txt" src="./img/mp-side-txt1.PNG"/>
+                <h3 class="mp-txt">CARDÁPIO <br>ANIMADO</h3>
                 <!-- Subtitulo -->
                 <p class="mp-side-subtxt">Apresente-se de uma forma moderna e passe muito mais confiança para sua audiência</p>
                 <!-- Menu Arcodeon -->
                 <div class="accordion" id="mp-side-menu1">
                     <!-- Parte 1 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                        DETALHES
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1" id="button-arrow1">
+                        <div class="lottie float-left seta" id="seta1"></div>
+                        Detalhes
                     </button>
-                    <div id="collapse11" class="collapse" data-parent="#mp-side-menu1">
+                    <div id="collapse1" class="collapse" data-parent="#mp-side-menu1">
                         <div class="card-body">
                             Esta ferramenta irá levar a experiência do seu consumidor a um novo nível. Cada produto oferecido ganhará uma animação que seguirá uma identidade visual padronizada, criando mais interesse para seu produto e cativando seu consumidor. As peças deste material conterão informações como foto do produto, preço e detalhes dele.
                         </div>
                     </div>
                     <!-- Parte 2 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
-                        APLICAÇÕES
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2" id="button-arrow2">
+                        <div class="lottie float-left seta" id="seta2"></div>
+                        Aplicações
                     </button>
-                    <div id="collapse21" class="collapse" data-parent="#mp-side-menu1">
+                    <div id="collapse2" class="collapse" data-parent="#mp-side-menu1">
                         <div class="card-body">
-                            Esta é a ferramenta ideal para divulgar com detalhes seus produtos nas mídias sociais. No instagram, por exemplo, você pode criar um destaque fixado dos stories da sua página de entrada mostrando todos produtos oferecidos. Além disso, caso você tenha uma TV interna, este mesmo material poderá ser utilizado como Menu Board, seguindo exemplo de grandes empresas como MCDonalds, Burger king e outras.
+                            Esta é a ferramenta ideal para divulgar com detalhes seus produtos nas mídias sociais. No instagram, por exemplo, você pode criar um destaque fixado nos stories da sua página de entrada mostrando todos produtos oferecidos. Além disso, caso você tenha uma TV interna, este mesmo material poderá ser utilizado como Menu Board, seguindo exemplo de grandes empresas como MCDonalds, Burger king e outras.
                         </div>
                     </div>
                     <!-- Parte 3 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
-                        VANTAGENS
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3" id="button-arrow3">
+                        <div class="lottie float-left seta" id="seta3"></div>
+                        Vantagens
                     </button>
-                    <div id="collapse31" class="collapse" data-parent="#mp-side-menu1">
+                    <div id="collapse3" class="collapse" data-parent="#mp-side-menu1">
                         <div class="card-body">
                             Poucas empresas contam com ferramentas como esta mostrando seus produtos. Este é um método moderno, atrativo e interessante de anunciar seu produto. Lembre-se que a internet, suas mídias e sua comunicação digital é a vitrine do seu negócio. Inovar e anunciar de uma forma diferente, é ótimo para cativar seu público e criar maior fidelidade.
                         </div>
@@ -146,104 +142,103 @@
         </section>
 
         <!-- Cardapio Interativo -->
-        <section class="row justify-content-center"  id="cardapio-interativo" data-aos="fade-up">
+        <section class="row justify-content-center" id="cardapio-interativo" data-aos="fade-up">
             <!-- Conteudo Lateral -->
             <div class="col-md-4" id="mp-side">
                 <!-- Imagem Titulo -->
-                <img class="mp-side-txt" src="./img/mp-side-txt2.PNG"/>
+                <h3 class="mp-txt">CARDÁPIO <br>INTERATIVO</h3>
                 <!-- Subtitulo -->
                 <p class="mp-side-subtxt">Crie uma experiência interessante para seus consumidores e destaque-se</p>
                 <!-- Menu Acordeon -->
                 <div class="accordion" id="mp-side-menu2">
                     <!-- Parte 1 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                        DETALHES
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4" id="button-arrow4">
+                        <div class="lottie float-left seta" id="seta4"></div>
+                        Detalhes
                     </button>
-                    <div id="collapse12" class="collapse" data-parent="#mp-side-menu2">
-                        <div class="card-body" id="card-body-middle">
-                            Esta ferramenta é um método inovador de mostrar seus produtos para seus consumidores de forma fácil e rápida, elevando a qualidade da experiência de consumo do seu produto. Com o cardápio interativo seus consumidores conseguirão fazer pedidos e conhecer o que você oferece de forma totalmente interativa diretamente no seu celular, facilitando a escolha na hora da decisão.
+                    <div id="collapse4" class="collapse" data-parent="#mp-side-menu2">
+                        <div class="card-body card-body-middle">
+                            Trata-se de um arquivo em PDF com botões clicáveis que redirecionam seu consumidor para um pedido automático no Whatsapp. Com o cardápio interativo seus consumidores conseguirão fazer pedidos e conhecer o que você oferece de forma totalmente interativa diretamente no seu celular, facilitando a escolha na hora da decisão.
                         </div>
                     </div>
                     <!-- Parte 2 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
-                        APLICAÇÕES
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5" id="button-arrow5">
+                        <div class="lottie float-left seta" id="seta5"></div>
+                        Aplicações
                     </button>
-                    <div id="collapse22" class="collapse" data-parent="#mp-side-menu2">
-                        <div class="card-body" id="card-body-middle">
-                            Patrocinar uma campanha nas suas mídias sociais que encaminha seus consumidores interessados para este cardápio é uma ótima aplicação, pois mostra seus produtos e facilita a jornada de consumo. Este material pode ainda ser enviado através de aplicativos de conversa como o WhatsApp por exemplo. Uma outra aplicação interessante é utilizar o cardápio interativo como uma extensão do seu cardápio físico, algo que melhora e inova a experiência de consumo do seu produto.
+                    <div id="collapse5" class="collapse" data-parent="#mp-side-menu2">
+                        <div class="card-body card-body-middle">
+                            Patrocinar uma campanha nas suas mídias sociais que encaminha seus consumidores interessados para este cardápio é uma ótima aplicação, pois mostra seus produtos e facilita a jornada de consumo. Este material pode ainda ser enviado através de aplicativos de conversa como o WhatsApp por exemplo. Uma outra aplicação interessante é utilizar o cardápio interativo como uma extensão do seu cardápio físico através de QR Code, algo que melhora e inova a experiência de consumo do seu produto.
                         </div>
                     </div>
                     <!-- Parte 3 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
-                        VANTAGENS
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6" id="button-arrow6">
+                        <div class="lottie float-left seta" id="seta6"></div>
+                        Vantagens
                     </button>
-                    <div id="collapse32" class="collapse" data-parent="#mp-side-menu2">
-                        <div class="card-body" id="card-body-middle">
-                            Esta ferramenta mostra seus produtos e já oferecer de forma interativa a possibilidade do consumidor de, com um único clique, fazer o pedido. Facilitar a jornada de consumo irá melhorar a fidelização do seu público, criando uma audiência sempre interessada.
+                    <div id="collapse6" class="collapse" data-parent="#mp-side-menu2">
+                        <div class="card-body card-body-middle">
+                            Esta ferramenta mostra seus produtos e já oferecer de forma interativa a possibilidade do consumidor de, com um único clique, fazer o pedido. Facilitar a jornada de consumo irá melhorar a fidelização do seu público, criando uma audiência sempre interessada. Além disso o seu consumidor sempre terá acesso ao cardápio através do smartphone.
                         </div>
                     </div>
                   </div>
             </div>
             <!-- Celular Exemplo -->
             <div class="col-md-4 mp-img2" id="mp">
-                <!-- TROCAR A ID PARA TROCAR A MODAL QUE ABRE -->
                 <div id="cardapioInterativo">
-                    <div class="play">
-                        <img alt="Botão de player" src="./img/play.png">
-                    </div>
                     <div>
-                        <img class="player" src="./img/mp-img2.PNG"/>
+                        <img class="player" alt="Celular com imagem de exemplo e botão de play" src="./images/cardapio-interativo.png"/>
                     </div>
                 </div>
                 <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
             </div>
         </section>
 
-        <!-- Chamada Animada-->
+        <!-- Chamada Animada -->
         <section class="row justify-content-center"  id="chamada-animada" data-aos="fade-up">
             <!-- Celular Exemplo -->
-            <div class="col-md-4 mp-img3" id="mp">
+            <div class="col-md-4 mp-img3 " id="mp">
                 <div id="chamadaAnimada">
-                    <div class="play">
-                        <img alt="Botão de player" src="./img/play.png">
-                    </div>
                     <div>
-                        <img class="player" src="./img/mp-img3.PNG"/>
+                        <img class="player" alt="Celular com imagem de exemplo e botão de play" src="./images/chamada-animada.png"/>
                     </div>
                 </div>
                 <p class="legenda-mp">Clique na imagem para visualizar os exemplos</p>
             </div>
-            <!-- Conteudo Lateral -->
+            <!-- Conteúdo Lateral -->
             <div class="col-md-4" id="mp-side">
                 <!-- Imagem Titulo -->
-                <img class="mp-side-txt" src="./img/mp-side-txt3.PNG"/>
+                <h3 class="mp-txt">CHAMADA <br>ANIMADA</h3>
                 <!-- Subtitulo -->
                 <p class="mp-side-subtxt">Apareça e seja lembrado! Mostre para seu cliente as vantagens de escolher seu produto.</p>
                 <!-- Menu Acordeon -->
                 <div class="accordion" id="mp-side-menu3">
                     <!-- Parte 1 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                        DETALHES
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7" id="button-arrow7">
+                        <div class="lottie float-left seta" id="seta7"></div>
+                        Detalhes
                     </button>
-                    <div id="collapse13" class="collapse" data-parent="#mp-side-menu3">
+                    <div id="collapse7" class="collapse" data-parent="#mp-side-menu3">
                         <div class="card-body">
                             Esta ferramenta é, em resumo, um vídeo animado chamando seu consumidor para adquirir seu produto ou visitar seu estabelecimento. O intuito é mostrar as vantagens do seu negócio para seus consumidores criando interesse e chamando a atenção, destacando-se diante da sua concorrência no âmbito digital.
                         </div>
                     </div>
                     <!-- Parte 2 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
-                        APLICAÇÕES
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8" id="button-arrow8">
+                        <div class="lottie float-left seta" id="seta8"></div>
+                        Aplicações
                     </button>
-                    <div id="collapse23" class="collapse" data-parent="#mp-side-menu3">
+                    <div id="collapse8" class="collapse" data-parent="#mp-side-menu3">
                         <div class="card-body">
-                            Você pode utilizar esta ferramenta como peça de campanha de divulgação com tráfego pago nas mídias sociais, servindo como isca para encaminhar seus consumidores para comprar seu produto. Além disto esta mesma peça pode ser utilizada em outras mídias chamando seus consumidores e apresentando seu produto. 
+                            Você pode utilizar esta ferramenta como peça de campanha de divulgação com tráfego pago nas mídias sociais, servindo como isca para encaminhar seus consumidores para comprar seu produto. Além disto esta mesma peça pode ser utilizada em outras mídias como painéis de led, PDV televisivos ou até propaganda em canais locais de televisão,chamando seus consumidores e apresentando seu produto. 
                         </div>
                     </div>
                     <!-- Parte 3 -->
-                    <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button" data-toggle="collapse" data-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
-                        VANTAGENS
+                    <button class="btn btn-link btn-block accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9" id="button-arrow9">
+                        <div class="lottie float-left seta" id="seta9"></div>
+                        Vantagens
                     </button>
-                    <div id="collapse33" class="collapse" data-parent="#mp-side-menu3">
+                    <div id="collapse9" class="collapse" data-parent="#mp-side-menu3">
                         <div class="card-body">
                             Esta é uma forma dinâmica de apresentar algum produto criando interesse e gerando mais engajamento. Com esta ferramenta é fácil passar mais informações em menos tempo de forma interessante e orgânica.
                         </div>
@@ -252,46 +247,50 @@
             </div>
         </section>
 
-        <!-- Mais Vantagens // data-aos="fade-up"-->
-        <section class="row justify-content-center" id="mais-vantanges">
+        <!-- Mais Vantagens -->
+        <section class="row justify-content-center align-items-center" id="mv-top"></section>
+        <section class="row justify-content-center align-items-center" id="mais-vantanges">
             <div class="col-md-4" id="mb-txt">
-                <img src="./img/middle-bottom-txt.PNG" id="mb-title"/>
+                <div class="div-mb">
+                    <h2 class="title-mb">OUTRAS <br>VANTAGENS</h2>
+                </div>
                 <div>
                     <div data-aos="fade-left">
-                        <img class="check float-left" src="./img/check-white.PNG"/>
+                        <img class="check float-left" alt="Check" src="./images/check-white.svg"/>
                         <h3 class="h-mb">Identidade Visual</h3>
-                        <p class="p-mb">Tenha mídias que sejam a cara do seu negócio e atraia mais a atenção do público certo.</p>
+                        <p class="p-mb">Tenha mídias que sejam a cara do seu negócio, uma identidade exclusiva para atrair melhor a atenção do público certo.</p>
                     </div>
                     <div data-aos="fade-left">
-                        <img class="check float-left" src="./img/check-white.PNG"/>
-                        <h3 class="h-mb">Consultoria de Marketing</h3>
-                        <p class="p-mb">Saiba como direcionar suas mídias de forma otimizada melhorando seus resultados e sua conversão em vendas.</p>
-                    </div>
-                    <div data-aos="fade-left">
-                        <img class="check float-left" src="./img/check-white.PNG"/>
+                        <img class="check float-left" alt="Check" src="./images/check-white.svg"/>
                         <h3 class="h-mb">Promoção Animada</h3>
                         <p class="p-mb">Tenha uma promoção animada para atrair novos clientes além de fidelizar sua audiência já existente.</p>
+                    </div>
+                    <div data-aos="fade-left">
+                        <img class="check float-left" alt="Check" src="./images/check-white.svg"/>
+                        <h3 class="h-mb">Campanha de Marketing</h3>
+                        <p class="p-mb">Iremos direcionar suas mídias para alcançar um melhor desempenho de campanha com maior alcance e resultados otimizados.</p>
                     </div>
                 </div>
                 
             </div>
             <!-- Parallax Pizza -->
             <div class="col-md-4" id="pizza">
-                <ul id="scene2">
-                    <li class="layer" data-depth="0.3"> 
-                        <img src="./img/middle-bottom-img-background.PNG"/>
-                    </li>
-                    <li class="layer parallax-padding" data-depth="0.9"> 
-                        <img src="./img/middle-bottom-img.PNG"/>
-                    </li>
-                </ul>
+                <div id="scene2">
+                    <div class="layer parallax-padding ml-2" data-depth="0.3"> 
+                        <img alt="Background do parallax" width="425px"src="./images/background-pizza.svg"/>
+                    </div>
+                    <div class="layer parallax-padding" data-depth="0.9"> 
+                        <img alt="Pizza" src="./images/pizza.png"/>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8 gap"></div>
+            <!--<div class="col-md-8 gap"></div>-->
         </section>
+        <section class="row justify-content-center align-items-center" id="mv-bottom"></section>
 
-        <!-- Preços  // data-aos="fade-up"-->
+        <!-- Preços -->
         <div class="row justify-content-center" id="topo-preco">
-            <div class="col-md-8">
+            <div class="col-md-8" id="tp">
                 <h2 class="title">Preço especial</h2>
                 <p class="subtitle">Conheça nossos três pacotes com preços diferenciados</p>
             </div>
@@ -299,104 +298,174 @@
 
         <!-- Pacotes -->
         <section class="row justify-content-center" id="pacotes">
-            <div class="col-md-2"></div>
-            <!-- Pacote Minimo -->
-            <div class="col-md" id="price">
-                <div>
-                    <img class="img-price float-left" src="./img/price-img1.PNG"/>
-                    <h3 class="h-price">Pacote <br>Mínimo</h3>
-                </div>
-                <p class="p-price">R$800 à vista <br>ou em até 12x de <br><span class="span-price">R$79,86</span></p>
-                    
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Identidade Visual</p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Animado <span class="span-item">(10 peças)</span></p></div>
-                <div><img class="check float-left" src="./img/check-red.PNG"><p class="item">Cardápio Interativo <span class="span-item">(10 produtos)</span></p></div>
-                <div><img class="check float-left" src="./img/check-red.PNG"><p class="item">Promoção Animada <span class="span-item">(01 produto)</span></p></div>
-                <div><img class="check float-left" src="./img/check-red.PNG"><p class="item">Chamada Animada</p></div>
-                <div><img class="check float-left" src="./img/check-red.PNG"><p class="item">Consultoria de marketing</p></div>
-
-                <a class="link-btn" href="briefing-minimo.html"><button type="button" class="btn btn-light btn-sm btn-block" id="price-button">COMPRAR</button></a>
-
-                <!--<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-preference-id="585264095-65b77857-cea1-48a5-a33e-fe98950f2ddc" data-button-label="COMPRAR">
-                </script>-->
-
-            </div>
+            <div class="col-md-2 order-first"></div>
 
             <!-- Pacote Completo -->
-            <div class="col-md " id="price-special">
-                <div id="off" class="tarja">
-                    <div class="tarja-up">
-                        <img alt="25% OFF" src="./img/price-special-img.png">
-                    </div>
-                    <div class="tarja-down">
-                        <img src="./img/price-special-img-back.png">
-                    </div>
-                </div>
+            <div class="col-md order-md-3 price-box price-special">
+
                 <div class="conteudo">
                     <div>
-                        <img class="img-price float-left" src="./img/price-img2.png"/>
-                        <h3 class="h-price">Pacote <br>Completo</h3>
+                        <div class="lottie anim-middle circle-price float-left" id="infografo-animated"></div>
+                        <h3 class="h-price">Pacote <br>Gourmet</h3>
                     </div>
-                    <p class="p-price"><span id="span-promo1">De</span> <span id="span-risco">R$1.700</span><span id="span-promo2"><br>por R$1.275</span> à vista <br>ou em até 12x de <span class="span-price"><span id="span-parcela-promo">R$127,28</span><span id="span-parcela-normal">R$340</span></span></p>
+                    <p class="p-price"><span id="span-promo1">De</span> <span id="span-risco">R$1.735</span><span id="span-promo2"><br>por R$1.303</span> à vista <br>ou em até 12x de <br><span class="span-price"><span id="span-parcela-promo">R$130,07</span><span id="span-parcela-normal">R$173,20</span></span> <br></p><p class="nc">no cartão</p>
                         
-                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Identidade Visual</p></div>
-                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Animado <span class="span-item">(20 peças)</span></p></div>
-                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Interativo <span class="span-item">(20 produtos)</span></p></div>
-                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Promoção Animada <span class="span-item">(02 produtos)</span></p></div>
-                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Chamada Animada</p></div>
-                    <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Consultoria de marketing</p></div>
-
-                    <div id="btn-promo">
-                        <a class="link-btn" href="briefing-completo.html"><button type="button" class="btn btn-light btn-sm btn-block" id="price-special-button">COMPRAR</button></a>
-                        <!--<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-preference-id="585264095-9c380903-8e04-4be0-b46d-521d8a4f7bf8" data-button-label="COMPRAR">
-                        </script>-->
+                    <div>
+                        <img class="check float-left" alt="Possui" src="./images/check-green.svg">
+                        <p class="item">Identidade Visual</p>
                     </div>
-                    <div id="btn-real">
-                        <a class="link-btn" href="briefing-completo.html"><button type="button" class="btn btn-light btn-sm btn-block" id="price-button">COMPRAR</button></a>
-                        <!-- <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="585264095-30469d55-2e28-4309-933d-43d8808496ba" data-button-label="COMPRAR">
-                        </script>
-                         -->
-                    </div>      
+                    <div>
+                        <img class="check float-left" alt="Possui" src="./images/check-green.svg">
+                        <p class="item">Cardápio Animado 
+                            <span class="span-item">(20 peças)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img class="check float-left" alt="Possui" src="./images/check-green.svg">
+                        <p class="item">Cardápio Interativo 
+                            <span class="span-item">(20 produtos)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img class="check float-left" alt="Possui" src="./images/check-green.svg">
+                        <p class="item">Promoção Animada 
+                            <span class="span-item">(02 produtos)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img class="check float-left" alt="Possui" src="./images/check-green.svg">
+                        <p class="item">Chamada Animada
+                            <span class="span-item">(com locução)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img class="check float-left" alt="Possui" src="./images/check-green.svg">
+                        <p class="item">Campanha de Marketing Digital 
+                            <span class="span-item">(01 mês)</span>
+                        </p>
+                    </div>
 
+                    <div class="buy">
+                        <div id="btn-promo">
+                            <a class="link-btn" href="briefing-gourmet.html"><button type="button" class="btn btn-light btn-sm btn-block price-button">COMPRAR</button></a>
+
+                            <!-- -->
+                            <div class="buy-term">
+                                <p>Ao comprar você estará concordando com os nossos <a href="./pdf/contrato-pacote-gourmet-promo.pdf" target="_blank">termos de uso</a>.</p>
+                            </div>
+                        </div>
+                        <div id="btn-real">
+                            <a class="link-btn" href="briefing-gourmet.html"><button type="button" class="btn btn-light btn-sm btn-block price-button">COMPRAR</button></a>
+
+                            <!-- -->
+                            <div class="buy-term">
+                                <p>Ao comprar você estará concordando com os nossos <a href="./pdf/contrato-pacote-gourmet.pdf" target="_blank">termos de uso</a>.</p>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+
+                <div id="off" class="tarja">
+                    <div class="tarja-up">
+                        <img class="tag" alt="25% OFF" src="./images/tag-off.svg">
+                    </div>
+                    <div class="tarja-down">
+                        <img class="tag" src="./images/tag-back.svg">
+                    </div>
+                </div>
+
+                <div id="pop" class="tarja">
+                    <div class="tarja-up">
+                        <img class="tag" alt="Popular" src="./images/tag-pop.svg">
+                    </div>
+                    <div class="tarja-down">
+                        <img class="tag" src="./images/tag-back.svg">
+                    </div>
                 </div>
             </div>
 
             <!-- Pacote Médio -->
-            <div class="col-md" id="price">
-                <div>
-                    <img class="img-price float-left" src="./img/price-img3.png"/>
-                    <h3 class="h-price">Pacote <br>Médio</h3>
-                </div>
-                <p class="p-price">R$1.200 à vista <br>ou em até 12x de <br><span class="span-price">R$119,79</span></p>
-                    
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Identidade Visual</p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Animado <span class="span-item">(10 peças)</span></p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Cardápio Interativo <span class="span-item">(10 produtos)</span></p></div>
-                <div><img class="check float-left" src="./img/check-green.PNG"><p class="item">Promoção Animada <span class="span-item">(01 produto)</span></p></div>
-                <div><img class="check float-left" src="./img/check-red.PNG"><p class="item">Chamada Animada</p></div>
-                <div><img class="check float-left" src="./img/check-red.PNG"><p class="item">Consultoria de marketing</p></div>
+            <div class="col-md order-md-4 price-box price">
+                <div class="conteudo">
+                    <div>
+                        <div class="lottie anim-middle circle-price float-left" id="moeda-animated"></div>
+                        <h3 class="h-price">Pacote <br>FoodTruck</h3>
+                    </div>
+                    <p class="p-price">R$1.197 à vista <br>ou em até 12x de <br><span class="span-price">R$119,49</span> <br></p><p class="nc">no cartão</p>
+                        
+                    <div><img class="check float-left" alt="Possui" src="./images/check-green.svg"><p class="item">Identidade Visual</p></div>
+                    <div><img class="check float-left" alt="Possui" src="./images/check-green.svg"><p class="item">Cardápio Animado <span class="span-item">(10 peças)</span></p></div>
+                    <div><img class="check float-left" alt="Possui" src="./images/check-green.svg"><p class="item">Cardápio Interativo <span class="span-item">(10 produtos)</span></p></div>
+                    <div><img class="check float-left" alt="Possui" src="./images/check-green.svg"><p class="item">Promoção Animada <span class="span-item">(01 produto)</span></p></div>
+                    <div><img class="check-r float-left" alt="Não possui" src="./images/check-red.svg"><p class="item">Chamada Animada</p></div>
+                    <div><img class="check-r float-left" alt="Não possui" src="./images/check-red.svg"><p class="item">Campanha de Marketing Digital</p></div>
 
-                <a class="link-btn" href="briefing-medio.html"><button type="button" class="btn btn-light btn-sm btn-block" id="price-button">COMPRAR</button></a>
-
-                <!--<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                data-preference-id="585264095-01ed5453-d75e-4020-98c9-1a607e1016c3" data-button-label="COMPRAR">
-                </script>-->
+                    <div class="buy">
+                        <a class="link-btn" href="briefing-foodtruck.html"><button type="button" class="btn btn-light btn-sm btn-block price-button">COMPRAR</button></a>
+                        <!-- -->
+                        <div class="buy-term">
+                            <p>Ao comprar você estará concordando com os nossos <a href="./pdf/contrato-pacote-foodtruck.pdf" target="_blank">termos de uso</a>.</p>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div class="col-md-2"></div>
-            <!--<div class="row">
-                <p class="legenda"><small>*NO CARTÃO DE CRÉDITO ATRAVÉS DO MERCADO PAGO</small></p>
-            </div>-->
+
+            <!-- Pacote Minimo -->
+            <div class="col-md order-md-2 price-box price">
+                <div class="conteudo">
+                    <div>
+                        <div class="lottie anim-middle circle-price float-left" id="maos-animated"></div>
+                        <h3 class="h-price">Pacote <br>Podrão</h3>
+                    </div>
+                    <p class="p-price">R$793 à vista <br>ou em até 12x de <br><span class="span-price">R$76,16</span> <br></p><p class="nc">no cartão</p>
+                        
+                    <div>
+                        <img class="check float-left" alt="Possui" src="./images/check-green.svg">
+                        <p class="item">Identidade Visual</p>
+                    </div>
+                    <div>
+                        <img class="check float-left" alt="Possui" src="./images/check-green.svg">
+                        <p class="item">Cardápio Animado 
+                            <span class="span-item">(10 peças)</span>
+                        </p>
+                    </div>
+                    <div>
+                        <img class="check-r float-left" alt="Não possui" src="./images/check-red.svg">
+                        <p class="item">Cardápio Interativo</p>
+                    </div>
+                    <div>
+                        <img class="check-r float-left" alt="Não possui" src="./images/check-red.svg">
+                        <p class="item">Promoção Animada</p>
+                    </div>
+                    <div>
+                        <img class="check-r float-left" alt="Não possui" src="./images/check-red.svg">
+                        <p class="item">Chamada Animada</p>
+                    </div>
+                    <div>
+                        <img class="check-r float-left" alt="Não possui" src="./images/check-red.svg">
+                        <p class="item">Campanha de Marketing Digital</p>
+                    </div>
+
+                    <div class="buy">
+                        <a class="link-btn" href="briefing-podrao.html"><button type="button" class="btn btn-light btn-sm btn-block price-button">COMPRAR</button></a>
+                        <!-- -->
+                        <div class="buy-term">
+                            <p>Ao comprar você estará concordando com os nossos <a href="./pdf/contrato-pacote-podrao.pdf" target="_blank">termos de uso</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 order-last "></div>
         </section>
 
-        <!-- Urgencia -->
+        <!-- Urgência -->
         <section id="promo">
             <div class="row justify-content-center">
                 <div class="col-md-8" id="promo-text">
                     <h2 class="title">A promoção acaba em:</h2>
                 </div>
             </div>
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center">
                 <div class="col-md-2"></div> 
                 <div class="col-md" id="balloon-promo">
                     <p class="h-bp" id="dias">00</p>
@@ -422,96 +491,249 @@
             </div>
         </section>
 
+        <!-- Marketing -->
+        <section id="marketing">
+            <div class="mark-div">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2 class="title">Quer uma consultoria de marketing grátis?</h2>
+                        <p class="subtitle">Para ganhar é fácil! Basta você responder a nossa pesquisa de satisfação abaixo e pronto. Sem truques. Iremos entrar em contato com você para agendar a reunião online.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8 mark-form">
+                        <form id="form-marketing" method="POST" action="">
+                            <div id="feedback" class=""></div>
+                            <label>Como você chegou até este site?</label>
+                            <div class="row ml-3 mb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="chegou" id="chegou-instagram" value="Instagram" required>
+                                    <label class="form-check-label" for="chegou-instagram">Instagram</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="chegou" id="chegou-facebook" value="Facebook" required>
+                                    <label class="form-check-label" for="chegou-facebook">Facebook</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="chegou" id="chegou-google" value="Google" required>
+                                    <label class="form-check-label" for="chegou-google">Google</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="chegou" id="chegou-outro" value="Outro" required>
+                                    <label class="form-check-label" for="chegou-outro">Outro</label>
+                                </div>
+                            </div>
+
+                            <label>Você encontrou aquilo que procurava?</label>
+                            <div class="row ml-3 mb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="encontrou" id="encontrou-sim" value="Sim" required>
+                                    <label class="form-check-label" for="encontrou-sim">Sim</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="encontrou" id="encontrou-nao" value="Não" required>
+                                    <label class="form-check-label" for="encontrou-nao">Não</label>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="collapseNao">
+                                <div class="form-group" id="se-nao">
+                                    <label for="procurando">O que você estava procurando?</label>
+                                    <textarea class="form-control" id="procurando" name="procurando" rows="2"  value=""></textarea>
+                                </div>
+                            </div>
+                                
+                            <div class="collapse" id="collapseSim">
+                                <div class="form-group" id="se-sim">
+                                    <label for="ofertas">O que você achou das ofertas?</label>
+                                    <textarea class="form-control" id="ofertas" name="ofertas" rows="2" value=""></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sugestao">Dê uma sugestão para nosso produto:</label>
+                                <textarea class="form-control" id="sugestao" name="sugestao" rows="2" placeholder="" required></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="nome">Seu nome:</label>
+                                        <input type="text" class="form-control" id="nome" name="nome" placeholder="João Silva" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="empresa">Nome da sua empresa:</label>
+                                        <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Hamburgueria do João" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email">Seu e-mail:</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="email@empresa.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="whatsapp">Seu Whatsapp:</label>
+                                        <input type="text" class="form-control" id="whatsapp" name="whatsapp" placeholder="48 9 8888-8888" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                <button type="submit" class="btn btn-primary" id="botao-enviar">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- FAQ -->
         <section class="row justify-content-center faq"  id="faq">
             <div class="col-md-8">
-                <h2 class="title">Perguntas Frequentes</h2>
+                <h2 class="title">Perguntas frequentes</h2>
                 <p class="subtitle">Ainda tem dúvidas? Busque-a no nosso FAQ</p>
             </div>
 
             <!-- Perguntas -->
             <div class="accordion col-md-8" id="accordion-faq">
                 <!-- Parte 1 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10" id="button-arrow10">
+                    <div class="lottie float-left seta" id="seta10"></div>
                     Como é o processo criativo?
                 </button>
-                <div id="collapse14" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse10" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
                         Inicialmente, após a compra, você terá acesso a um formulário o qual nós chamamos de BRIEFING. Neste formulário, você irá nos fornecer todas informações necessárias para fazermos seu trabalho de uma forma completa e bem elaborada. Ainda neste formulário, aceitaremos dicas e sugestões sobre ideias que você possa ter para a identidade visual que você deseja, assim como as fotos dos seus produtos (em alta qualidade). Com essas informações em mãos, nós iremos iniciar a construção de uma PEÇA PILOTO, que será o vídeo um dos seus produtos já com a identidade visual criada. Esta peça servirá de termômetro pois é com ela que definimos alterações ou melhorias na sua identidade visual. A partir da aprovação da peça piloto daremos continuidade nas peças restantes para lhe entregar todo o pacote. Após a entrega, daremos um prazo de 5 dias para você poder conferir todas as informações e nos passar possíveis alterações NAS INFORMAÇÕES, não aceitaremos alterações na identidade visual nesta etapa. Após o término e entrega do pacote, você terá ainda direito a uma solicitação de alteração nos valores de todas as peças. Porém, você poderá fazer essa solicitação apenas uma vez com um prazo limite de 6 meses após a finalização do projeto. 
                     </div>
                 </div>
                 <!-- Parte 2 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11" id="button-arrow11">
                     Eu preciso ter fotos dos produtos?
+                    <div class="lottie float-left seta" id="seta11"></div>
                 </button>
-                <div id="collapse24" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse11" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
                         Sim, você precisa ter fotos dos produtos! Esta é uma etapa importante, pois são as fotos dos seus produtos que vendem de fato ele, com ajuda das animações para chamar a atenção do público. Existe algumas exigências para as fotos, pois ela passará por um processo de recorte e/ou manipulação visual. Uma foto tirada com um celular de baixa qualidade, sem fundo monocromático e iluminação inadequada, não servirá para nosso propósito. É interessante você investir em um bom trabalho de fotos de produto.
                     </div>
                 </div>
                 <!-- Parte 3 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse34" aria-expanded="false" aria-controls="collapse34">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12" id="button-arrow12">
+                    <div class="lottie float-left seta" id="seta12"></div>
                     Não tenho foto de qualidade dos meus produtos e agora?
                 </button>
-                <div id="collapse34" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse12" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
                         A nossa dica é: Contrate um profissional para tirar boas fotos do seu produto! Nós da 3V também temos pacotes de fotografias, porém, atendemos apenas a região do extremo sul Catarinense. Outra saída rápida que podemos dar é pegar fotos de bancos de imagem da internet. Existem diversos bancos de imagens de alta qualidade na internet, porém a foto não será exatamente a foto do seu produto, apenas uma representação do mesmo e isso pode ser desvantajoso. Estes bancos também tem um custo por imagem. Caso você opte pela solução de imagens de banco on-line, nós cobramos um valor de U$10 (dólares) por foto e ficamos encarregados de buscar as fotos para você, lhe mostrando elas para a aprovação antes de utilizá-la.
                     </div>
                 </div>
                 <!-- Parte 4 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse44" aria-expanded="false" aria-controls="collapse44">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13" id="button-arrow13">
+                    <div class="lottie float-left seta" id="seta13"></div>
                     Qual o prazo de entrega?
                 </button>
-                <div id="collapse44" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse13" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
-                        Após o recebimento do briefing nós faremos uma avaliação para averiguar se todas informações estão OK, se as imagens enviadas são de boa qualidade ou não. Se tudo estiver certo, nós damos o prazo de 30 dias corridos para a entregar o pacote completo. Dentro deste prazo terão as etapas de aprovação da Peça piloto e Alterações da mesma. Essas etapas terão um prazo limite para resposta o qual, caso seja extrapolado, irá interferir diretamente na data de prazo de entrega podendo prolongar por mais dias o envio final do pacote.
+                        Após o recebimento do briefing nós faremos uma avaliação para averiguar se todas informações estão OK, se as imagens enviadas são de boa qualidade ou não. Se tudo estiver certo, nós damos o prazo de 30 dias corridos para a entregar o pacote completo. Dentro deste prazo terão as etapas de aprovação da Peça piloto com alterações da identidade visual e, após a aprovação, elaboração de todo o pacote com posterior correção de informações. Essas etapas terão um prazo limite para resposta por parte do contratante o qual, caso seja extrapolado, irá interferir diretamente na data de prazo de entrega podendo prolongar por mais dias o envio final do pacote.
                     </div>
                 </div>
                 <!-- Parte 5 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse54" aria-expanded="false" aria-controls="collapse54">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14" id="button-arrow14">
+                    <div class="lottie float-left seta" id="seta14"></div>
                     Os vídeos contam com locução? 
                 </button>
-                <div id="collapse54" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse14" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
-                        Não, os vídeos não contam com locução. Porém, caso seja de seu interesse, com um custo adicional nós conseguimos inserir locução nas suas peças da forma que você desejar e achar relevante para sua empresa.
+                        Apenas o vídeo de CHAMADA ANIMADA tem locução, as outras peças como cardápio animado e promoção animada não contam com este recurso.
                     </div>
                 </div>
                 <!-- Parte 6 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse64" aria-expanded="false" aria-controls="collapse64">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15" id="button-arrow15">
+                    <div class="lottie float-left seta" id="seta15"></div>
                     A quantas alterações eu tenho direito? 
                 </button>
-                <div id="collapse64" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse15" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
-                        Nós temos três etapas de alteração. A primeira etapa é ainda na elaboração da identidade visual, onde você poderá solicitar alterações na identidade visual, após receber a peça piloto. A segunda etapa de alteração é após a primeira entrega de prova do projeto, e nesta etapa aceitaremos alterações de informações apenas e não na identidade visual. E por fim, após a entrega e finalização do projeto, dentro de um período de 6 (seis) meses você poderá ainda solicitar alterações nos valores dos seus produtos.
+                        Nós temos três etapas de alteração. A primeira etapa de alteração é após a entrega da peça piloto, onde você poderá solicitar alterações na identidade visual. A segunda etapa de alteração é após a primeira entrega de prova do projeto, e nesta etapa aceitaremos alterações de informações apenas e não na identidade visual. E por fim, após a entrega e finalização do projeto, dentro de um período de 6 (seis) meses você ainda poderá solicitar, apenas uma vez dentro deste período, alterações nos valores dos seus produtos.
                     </div>
                 </div>
                 <!-- Parte 7 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse74" aria-expanded="false" aria-controls="collapse74">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16" id="button-arrow16">
+                    <div class="lottie float-left seta" id="seta16"></div>
                     Os vídeos me garantem mais engajamento? 
                 </button>
-                <div id="collapse74" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse16" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
                         Nada na internet é garantia de engajamento. O que irá de fato lhe garantir engajamento é a forma com que você se relaciona e se conecta com seus consumidores. Nosso material irá facilitar este processo, melhorando suas interações e gerando mais interesse no seu produto. Isso aliado com sua comunicação e relação com os clientes é que irão gerar seu engajamento. Os videos sozinhos sem um bom relacionamento com os clientes não irão lhe garantir isso.
                     </div>
                 </div>
                 <!-- Parte 8 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse84" aria-expanded="false" aria-controls="collapse84">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17" id="button-arrow17">
+                    <div class="lottie float-left seta" id="seta17"></div>
                     Este pacote me garante mais conversão em vendas? 
                 </button>
-                <div id="collapse84" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse17" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
                         Assim como a questão do engajamento, as vendas funcionam da mesma forma. O que irá lhe garantir vendas é a fidelização dos clientes e uma boa qualidade nos seus produtos aliado com uma relação e comunicação com os clientes de forma direta e com qualidade. Nossos vídeos irão facilitar suas vendas, pois irão gerar mais interesse e, consequentemente, atrair novos clientes além de fidelizar aqueles que já consomem com você.
                     </div>
                 </div>
                 <!-- Parte 9 -->
-                <button class="btn btn-warning btn-block collapsed" type="button" id="accordion-button-faq" data-toggle="collapse" data-target="#collapse94" aria-expanded="false" aria-controls="collapse94">
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18" id="button-arrow18">
+                    <div class="lottie float-left seta" id="seta18"></div>
                     Vou precisar fornecer a senha das minhas mídias? 
                 </button>
-                <div id="collapse94" class="collapse" data-parent="#accordion-faq">
+                <div id="collapse18" class="collapse" data-parent="#accordion-faq">
                     <div class="card-body-faq">
                         Não, você não precisa nos fornecer qualquer senha ou acesso às suas mídias. Nossa relação se restringe a criação das peças que você irá utilizar na sua divulgação. Nós não iremos nos responsabilizar pelas postagens ou manutenção da sua mídia de qualquer forma. Caso você tenha interesse em serviço de gerenciamento de mídia, nós da 3V também podemos oferecer bons pacotes específicos para sua necessidade. Entre em contato que nós podemos lhe encaminhar uma proposta.
                     </div>
                 </div>
+                <!-- Parte 10 -->
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19" id="button-arrow19">
+                    <div class="lottie float-left seta" id="seta19"></div>
+                    Quais as dimensões das animações?
+                </button>
+                <div id="collapse19" class="collapse" data-parent="#accordion-faq">
+                    <div class="card-body-faq">
+                        As animações serão feitas no tamanho 1080px por 1920px, ou seja, em tamanho padrão para STORIES. Adotamos esta dimensão como regular pois ela é ideal para ser visualizada em smartphones. Utilizamos ainda um padrão de alinhamento deixando uma borda em cima e em baixo sem informações relevantes para possibilitar a mesma peça a ser postada no feed sem perder conteúdo. Em resumo, uma mesma peça poderá ser utilizada tanto nos stories quanto no feed, mas terá tamanho padrão de stories.
+                    </div>
+                </div>
+                <!-- Parte 11 -->
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20" id="button-arrow20">
+                    <div class="lottie float-left seta" id="seta20"></div>
+                    O que é a consultoria de marketing?
+                </button>
+                <div id="collapse20" class="collapse" data-parent="#accordion-faq">
+                    <div class="card-body-faq">
+                        A consultoria de marketing é uma reunião na qual passaremos uma visão mais profissional sobre sua estratégia de marketing além de dicas e direcionamentos para um futuro planejamento da sua empresa nesta área. A consultoria é basicamente uma reunião com duração máxima de 1 (uma) hora onde iremos conversar sobre uma visão mais abrangente do assunto, focando na intenção do cliente e seus objetivos de acordo com a necessidade de cada cliente e seu direcionamento.
+                    </div>
+                </div>
+
+                <!-- Parte 12 -->
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21" id="button-arrow21">
+                    <div class="lottie float-left seta" id="seta21"></div>
+                    Como funciona a campanha de marketing?
+                </button>
+                <div id="collapse21" class="collapse" data-parent="#accordion-faq">
+                    <div class="card-body-faq">
+                        A campanha de marketing é uma preparação estratégica e acompanhamento da sua campanha de marketing durante um mês após a entrega das peças gráficas. Faremos uma reunião para, junto a você, definir detalhes como público alvo, intenção da campanha, foco de mídias além de estipular o valor de aplicação do orçamento para o tráfego pago nas redes sociais.
+                    </div>
+                </div>
+
+                <!-- Parte 13 -->
+                <button class="btn btn-link btn-block accordion-button-faq collapsed" type="button" data-toggle="collapse" data-target="#collapse22" aria-expanded="false" aria-controls="collapse22" id="button-arrow22">
+                    <div class="lottie float-left seta" id="seta22"></div>
+                    Quais as formas de pagamento?
+                </button>
+                <div id="collapse22" class="collapse" data-parent="#accordion-faq">
+                    <div class="card-body-faq">
+                        Após escolher o pacote de sua preferência e clicar no botão comprar, você irá ser redirecionado para uma página de pagamento. Nesta página de pagamento você poderá escolher entre algumas opções como pagar a vista no boleto, em uma lotérica, com sua conta digital da caixa ou parcelar em até 12x no cartão. Caso você selecione a opção de parcelamento, é importante saber que existem as taxas do cartão, por isso o valor final ficará mais elevado ao ser parcelado.
+                    </div>
+                </div>
+
             </div>            
         </section>
     </main>
@@ -522,43 +744,42 @@
         <div class="row justify-content-center" id="bottom-top">
             <div class="col-md-8" id="bottom-text">
                 <h2 class="title" id="title-bottom">Entre em contato</h2>
-                <p class="subtitle" id="title-bottom">Sugestões, feedback ou dúvidas? Entre em contato</p>
+                <p class="subtitle" id="title-bottom">Sugestões, feedback ou dúvidas? Fale com a gente!</p>
             </div>
         </div>
         <!-- Balões de Contato-->
         <section class="row justify-content-center" id="bottom-middle">
             <div class="col-md-2"></div>
-
-                <button class="col-md contact">
-                    <a href="mailto:william.viana2@gmail.com">
-                        <img src="./img/email.PNG" class="c-img"/>
+                <button class="col-md contact contact-a">
+                    <a href="mailto:contato@3vmotion.com">
+                        <div class="lottie anim-bottom circle float-left" id="carta-animated"></div>
                         <h3 class="c-title">E-mail</h3>
-                        <p class="c-txt">william.viana2@gmail.com</p>
+                        <p class="c-txt">contato@3vmotion.com</p>
                     </a>
                 </button>
-                <button class="col-md contact">
-                    <a href="https://api.whatsapp.com/send?phone=5548991286811" target="_blank">
-                        <img src="./img/wpp.PNG" class="c-img"/>
+                <button class="col-md contact contact-a">
+                    <a href="https://api.whatsapp.com/send?phone=5548991286811" rel="noopener" target="_blank">
+                        <div class="lottie anim-bottom circle float-left" id="whatsapp-animated"></div>
                         <h3 class="c-title">Whatsapp</h3>
                         <p class="c-txt">(48) 9 9128-6811</p>
                     </a>
                 </button>
-                <button class="col-md contact">
-                    <a href="tel:4835242560">
-                        <img src="./img/phone.PNG" class="c-img"/>
-                        <h3 class="c-title">Telefone</h3>
-                        <p class="c-txt">(48) 3524-2560</p>
+                <button class="col-md contact contact-a">
+                    <a href="https://www.instagram.com/3vmotion/" rel="noopener" target="_blank">
+                        <div class="lottie anim-bottom circle float-left" id="instagram-animated"></div>
+                        <h3 class="c-title">Instagram</h3>
+                        <p class="c-txt">@3vmotion</p>
                     </a>
                 </button>
             <div class="col-md-2"></div>
         </section>
         <!-- Logo -->
         <section class="row justify-content-center" id="bottom-bottom">
-            <div class="col-md-8" id="logo">
-                <img src="./img/logo.PNG" id="logo-img"/>
+            <div class="col-md-8 contact-a" id="logo">
+                <a  href="../"><div class="lottie anim-bottom logo" id="logo-animated"></div></a>
             </div>
             <div class="col-md-8">
-            <h6 id="credit">3V Motion Media © 2020 | Desenvolvido por <a href="https://lucasbecker.github.io/" target="_blank" class="b">Lucas Becker</a>.</h6>
+            <p id="credit">3V Motion Media © 2020 | Desenvolvido por <a href="https://lucasbecker.github.io/" target="_blank" rel="noopener" class="b">Lucas Becker</a>.</p>
             </div>
         </section>
     </footer>
@@ -609,10 +830,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
     <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-    <!-- JavaScript (Opcional) -->
-    <script src="./js/script.js"></script>
-    
+    <!-- Lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.1/lottie.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./javascripts/script.js"></script>
+    <script src="./javascripts/script-animation.js"></script>
+    <script src="./javascripts/script-promo.js"></script>
 </body>
 </html>
